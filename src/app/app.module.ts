@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { BooklistComponent } from './booklist/booklist.component';
 import { RightMenuComponent } from './right-menu/right-menu.component';
 import { HeaderComponent } from './header/header.component';
 
@@ -10,8 +11,9 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     MainPageComponent,
-    RightMenuComponent
-    HeaderComponent
+    BooklistComponent,
+    RightMenuComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule
