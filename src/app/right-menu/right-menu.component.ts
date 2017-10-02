@@ -12,9 +12,6 @@ export class RightMenuComponent implements OnInit {
 
   public model = {
     listOfCategories: ['Akcja', 'Fantasy', 'Historyczne', 'Kryminał', 'Przygodowa'],
-    action: "Akcja",
-    fantasy: "Fantasy"
-
   };
 
   constructor() {}
