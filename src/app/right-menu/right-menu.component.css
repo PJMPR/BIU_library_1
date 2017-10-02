@@ -1,0 +1,63 @@
+body{
+    margin-top:10px;
+    background: #e0e0e0;
+}
+ /* Just use the lower part */
+
+.msk-catDiv {
+    margin-bottom: 5px;
+}
+.msk-catBar {
+    display: inline-block;
+	font-size: 14px;
+	text-align: left;
+	height: 40px;
+}
+a.msk-catBar:hover {
+	text-decoration: none;
+}
+.msk-catText {
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+    margin-left: 40px;
+    padding: 10px 15px 8px;
+}
+.msk-catBar, .msk-catSubBar {
+    margin-bottom: 2px;
+}
+.msk-catSplit {
+	color: #fff !important;
+	float: left;
+	height: 40px;
+	text-align: center;
+	width: 40px;
+}
+.msk-catSplit > .glyphicon{
+  position:relative;
+  top: calc(50% - 9px)!important; /* 50% - 3/4 of icon height */
+}
+
+.msk-catBar.msk-catDefault > .msk-catSplit {
+    background: #337ab7 none repeat scroll 0 0;
+}
+.msk-catBar.msk-catDefault > .msk-catText:hover {
+    border-bottom: 2px solid #46c49c;
+}
+.msk-catInfo > .msk-catSplit {
+    background: #5bc0de none repeat scroll 0 0;
+}
+.msk-catInfo > .msk-catText:hover {
+    border-bottom: 2px solid #46c49c;
+}
+.msk-catBar.msk-catSuccess > .msk-catSplit {
+    background: #5cb85c none repeat scroll 0 0;
+}
+.msk-catBar.msk-catSuccess > .msk-catText:hover {
+    border-bottom: 2px solid #5cb85c;
+}
+.msk-catBar.msk-catDanger > .msk-catSplit {
+    background: #d9534f none repeat scroll 0 0;
+}
+.msk-catBar.msk-catDanger > .msk-catText:hover {
+    border-bottom: 2px solid #d9534f;
+}
