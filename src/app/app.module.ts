@@ -6,6 +6,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { BooklistComponent } from './booklist/booklist.component';
 import { RightMenuComponent } from './right-menu/right-menu.component';
 import { HeaderComponent } from './header/header.component';
+import { TemplateComponent } from './template/template.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
     BooklistComponent,
     RightMenuComponent,
     HeaderComponent,
+    TemplateComponent,
   ],
   imports: [
     BrowserModule
