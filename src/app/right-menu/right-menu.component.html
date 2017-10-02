@@ -5,9 +5,14 @@
     <div class="msk-catDiv">
       <a class="msk-catBar msk-catDefault" href="#">
         <div class="msk-catSplit" style="background: #46c49c" ><i class="glyphicon glyphicon-screenshot"></i></div>
-        <div class="msk-catText" style="color: #46c49c" >{{item}}</div>
+        <div class="msk-catText" style="color: #46c49c" >{{item.name}}</div>
       </a>
     </div>
+    <div class="msk-catSub"*ngFor="let item2 of item.subCategories">
+      <a class="msk-catBar msk-catInfo" href="#">
+      <div class="msk-catText">{{item2}}</div>
+    </a>
+      </div>
   </div>
 
  
