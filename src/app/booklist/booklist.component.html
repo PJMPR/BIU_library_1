@@ -1,76 +1,24 @@
   <fieldset><legend>Przygodowe</legend>
-      <div id="ksiazka">
-        <img src="http://ecsmedia.pl/c/zwiadowcy-ksiega-1-ruiny-gorlanu-b-iext41811229.jpg" style="width:169px;height:250px">
+
+      <div id="ksiazka"*ngFor="let book of booklist1">
+        <img src="{{book.image}}" style="width:169px;height:250px">
+        
         <p>
-          Ruiny Gorlanu
+            <br>
+          {{book.title}}
         </p>
         <a href="">Szczegóły</a>
       </div>
-      <div  id="ksiazka">
-          <img src="http://ecsmedia.pl/c/zwiadowcy-ksiega-2-plonacy-most-b-iext41780075.jpg" style="width:169px;height:250px">
-          <p>
-            Płonący Most
-          </p>
-          <a href="">Szczegóły</a>
-        </div>
-        <div  id="ksiazka">
-            <img src="http://ecsmedia.pl/c/zwiadowcy-ksiega-3-ziemia-skuta-lodem-b-iext41780841.jpg" style="width:169px;height:250px">
-            <p>
-              Ziemia Skuta Lodem
-            </p>
-            <a href="">Szczegóły</a>
-          </div>
-          <div  id="ksiazka">
-              <img src="http://ecsmedia.pl/c/zwiadowcy-ksiega-4-bitwa-o-skandie-b-iext41779981.jpg" style="width:169px;height:250px">
-              <p>
-                Bitwa o Skandię
-              </p>
-              <a href="">Szczegóły</a>
-            </div>
-            <div  id="ksiazka">
-                <img src="http://ecsmedia.pl/c/zwiadowcy-ksiega-5-czarnoksieznik-z-polnocy-b-iext43786101.jpg" style="width:169px;height:250px">
-                <p>
-                  Czarnoksiężnik z Północy
-                </p>
-                <a href="">Szczegóły</a>
-              </div>
-      
     </fieldset>
+
     <fieldset><legend>Fantasy</legend>
-      <div  id="ksiazka">
-      <img src="https://upload.wikimedia.org/wikipedia/en/c/ce/Eragon_book_cover.png" style="width:169px;height:250px">
-      <p>
-        Eragon
-      </p>
-      <a href="">Szczegóły</a>
-    </div>
-    <div  id="ksiazka">
-        <img src="http://ksiazki-ktore-czytam.piszecomysle.pl/files/2013/10/Najstarszy-deLux-doRec.jpg" style="width:169px;height:250px">
+      <div id="ksiazka"*ngFor="let book of booklist2">
+        <img src="{{book.image}}" style="width:169px;height:250px">
         <p>
-          Najstarszy
+          <br>
+          {{book.title}}
         </p>
         <a href="">Szczegóły</a>
       </div>
-      <div  id="ksiazka">
-          <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Brisingr_book_cover.png" style="width:169px;height:250px">
-          <p>
-            Brisingr
-          </p>
-          <a href="">Szczegóły</a>
-        </div>
-        <div  id="ksiazka">
-            <img src="http://www.matras.pl/media/catalog/product/d/z/dziedzictwo_tom_1_IMAGE1_240898_3.jpg" style="width:169px;height:250px">
-            <p>
-              Dziedzictwo Tom 1
-            </p>
-            <a href="">Szczegóły</a>
-          </div>
-          <div  id="ksiazka">
-              <img src="https://media.merlin.pl/media/original/000/005/835/56bb7fb292673.jpg" style="width:169px;height:250px">
-              <p>
-                Dziedzictwo Tom 2
-              </p>
-              <a href="">Szczegóły</a>
-            </div>
     </fieldset>
 
