@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public model = {
+    title: 'library',
+    username: 's13900',
+    numberOfMessages: 5
+  };
+
   constructor() { }
 
   ngOnInit() {
