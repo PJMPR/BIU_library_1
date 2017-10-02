@@ -1,50 +1,13 @@
+<!-- https://getbootstrap.com/docs/3.3/components/ -->
+<!-- https://bootsnipp.com/snippets/Ba4nD -->
 <div class="container">
-  <div class="row">
+  <div class="row" *ngFor="let item of model.listOfCategories">
     <div class="msk-catDiv">
       <a class="msk-catBar msk-catDefault" href="#">
-        <div class="msk-catSplit" style="background: #46c49c"><i class="glyphicon glyphicon-screenshot"></i></div>
-        <div class="msk-catText" style="color: #46c49c">Akcja</div>
+        <div class="msk-catSplit" style="background: #46c49c" ><i class="glyphicon glyphicon-screenshot"></i></div>
+        <div class="msk-catText" style="color: #46c49c" >{{item}}</div>
       </a>
     </div>
   </div>
-  <div class="row">
-    <div class="msk-catDiv">
-      <a class="msk-catBar msk-catDefault" href="#">
-        <div class="msk-catSplit" style="background: #46c49c"><i class="glyphicon glyphicon-globe"></i></div>
-        <div class="msk-catText" style="color: #46c49c">Fantasy</div>
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="msk-catDiv">
-      <a class="msk-catBar msk-catDefault" href="#">
-        <div class="msk-catSplit" style="background: #46c49c"><i class="glyphicon glyphicon-globe"></i></div>
-        <div class="msk-catText" style="color: #46c49c">Historyczne</div>
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="msk-catDiv">
-      <a class="msk-catBar msk-catDefault" href="#">
-        <div class="msk-catSplit" style="background: #46c49c"><i class="glyphicon glyphicon-globe"></i></div>
-        <div class="msk-catText" style="color: #46c49c">Kryminał</div>
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="msk-catDiv">
-      <a class="msk-catBar msk-catDefault" href="#">
-        <div class="msk-catSplit" style="background: #46c49c"><i class="glyphicon glyphicon-globe"></i></div>
-        <div class="msk-catText" style="color: #46c49c">Przygodowa</div>
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="msk-catDiv">
-      <a class="msk-catBar msk-catDefault" href="#">
-        <div class="msk-catSplit" style="background: #46c49c"><i class="glyphicon glyphicon-globe"></i></div>
-        <div class="msk-catText" style="color: #46c49c">Satyra</div>
-      </a>
-    </div>
-  </div>
-</div>
+
+ 

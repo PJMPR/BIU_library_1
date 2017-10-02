@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'right-menu',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RightMenuComponent implements OnInit {
 
-  constructor() { }
+  public model = {
+    listOfCategories: ['Akcja', 'Fantasy', 'Historyczne', 'Kryminał', 'Przygodowa'],
+  };
 
-  ngOnInit() {
-  }
+  constructor() {}
+
+  ngOnInit() {}
 
 }
