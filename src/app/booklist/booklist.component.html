@@ -1,0 +1,64 @@
+<div class="container_booklist">
+    <div class="row">
+    	<div class="col-md-12">
+			<div class="col-sm-6 col-md-4" *ngFor="let book of booklist1">
+				<div class="thumbnail">
+					<h4 class="text-center"><span class="label label-info">Przygodowa</span></h4>
+					<img src="{{book.image}}" class="img-responsive">
+					<div class="caption">
+						<div class="row">
+							<div class="col-md-6 col-xs-6 price">
+								<h3><label>{{book.title}}</label></h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Szczegóły</a> 
+							</div>
+						</div>
+
+						<p> </p>
+					</div>
+				</div>
+			</div>
+
+						<p> </p>
+					</div>
+				</div>
+			</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!--<div class="bookList"><fieldset>
+      <legend>Przygodowe</legend>
+
+      <div id="ksiazka"*ngFor="let book of booklist1">
+        <img src="{{book.image}}" style="width:169px;height:250px">
+        
+        <p>
+            <br>
+          {{book.title}}
+        </p>
+        <a href="">Szczegóły</a>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Fantasy</legend>
+      <div id="ksiazka"*ngFor="let book of booklist2">
+        <img src="{{book.image}}" style="width:169px;height:250px">
+        <p>
+          <br>
+          {{book.title}}
+        </p>
+        <a href="">Szczegóły</a>
+      </div>
+    
+    </fieldset>
+  </div>-->
+

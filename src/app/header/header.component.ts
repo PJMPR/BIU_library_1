@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderModel } from './HeaderModel'
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+public model = new HeaderModel("s13900", 5);
   constructor() { }
 
   ngOnInit() {
