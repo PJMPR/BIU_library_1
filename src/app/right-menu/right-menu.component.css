@@ -3,7 +3,7 @@
 }
 .msk-catBar {
     display: inline-block;
-	font-size: 14px;
+    font-size: 14px;
 	text-align: right;
     height: 40px;
     padding-right: 10px;
@@ -16,14 +16,16 @@ a.msk-catBar:hover {
     border-bottom: 2px solid white;
     margin-left: 0px;
     padding: 10px 15px 8px;
-    width: 326px;
+    width: 330px;
+    font-weight: 900;
     color: white;
 }
 .msk-catTextSub {
     background-color: #b02e1e;
     margin-left: 0px;
     padding: 10px 15px 8px;
-    width: 326px;
+    width: 330px;
+    font-weight: 500;
     color: white;
 }
 .msk-catTextCat, .msk-catTextSub > .msk-catSubBar {
@@ -59,5 +61,5 @@ a.msk-catBar:hover {
     background: white none repeat scroll 0 0;
 }
 .msk-catInfo > .msk-catTextCat:hover,.msk-catTextSub:hover {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid white;
 }

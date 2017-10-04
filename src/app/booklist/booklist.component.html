@@ -1,19 +1,19 @@
 <div class="container_booklist">
     <div class="row">
     	<div class="col-md-12">
-			<div class="col-sm-6 col-md-4" *ngFor="let book of booklist1">
+			<div class="col-sm-6booklist col-md-4booklist" *ngFor="let book of booklist1">
 				<div class="thumbnail">
-					<h4 class="text-center"><span class="label label-info">Przygodowa</span></h4>
+					<h4 class="text-center"><span class="label book_adventure">Przygodowa</span></h4>
 					<img src="{{book.image}}" class="img-responsive">
 					<div class="caption">
 						<div class="row">
 							<div class="col-md-6 col-xs-6 price">
-								<h3><label>{{book.title}}</label></h3>
+								<h4><label style="text-align: center;" >{{book.title}}</label></h4>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Szczegóły</a> 
+								<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a> 
 							</div>
 						</div>
 
@@ -25,6 +25,36 @@
 						<p> </p>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+					<div class="col-sm-6booklist col-md-4booklist" *ngFor="let book of booklist2">
+						<div class="thumbnail">
+							<h4 class="text-center"><span class="label book_fantasy">Fantasy</span></h4>
+							<img src="{{book.image}}" width="325px" height="500px" class="img-responsive">
+							<div class="caption">
+								<div class="row">
+									<div class="col-md-6 col-xs-6 price">
+										<h4><label style="text-align: center;" >{{book.title}}</label></h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a> 
+									</div>
+								</div>
+		
+								<p> </p>
+							</div>
+						</div>
+					</div>
+		
+								<p> </p>
+							</div>
+						</div>
+
+
+								
 			</div>
       
       
