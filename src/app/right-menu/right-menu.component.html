@@ -1,21 +1,20 @@
 <!-- https://getbootstrap.com/docs/3.3/components/ -->
 <!-- https://bootsnipp.com/snippets/Ba4nD -->
 
-<div class="container_right_menu">
-  <div class="row" *ngFor="let item of model.listOfCategories">
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-sm-2">
+          <div id="public-image-menu-m">
+            <ul class="public-image-tag-m">
+                <li class="public-image-category-a selected" *ngFor="let item of model.listOfCategories">{{item.name}}                     
+                      <ul>
+                        <li class="public-image-tag-a" *ngFor="let item2 of item.subCategories">{{item2}}</li>
+                         </ul>
+                </li>            
 
-    <div class="msk-catDiv">
-      <a class="msk-catBar msk-catDefault" href="#">
-        <div class="msk-catTextCat" style="color: white" >{{item.name}}</div>
-      </a>
-    </div>
-
-    <div class="msk-catSub" *ngFor="let item2 of item.subCategories">
-      <a class="msk-catBar msk-catInfo" href="#">
-        <div class="msk-catTextSub">{{item2}}</div>
-    </a>
-      </div>
-
-    </div>
-
+            </ul>
+          </div>
+        </div>
+	</div>
+</div>
  
