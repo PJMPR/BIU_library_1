@@ -16,7 +16,7 @@ a.msk-catBar:hover {
     border-bottom: 2px solid white;
     margin-left: 0px;
     padding: 10px 15px 8px;
-    width: 330px;
+    width: 266px;
     font-weight: 900;
     color: white;
 }
@@ -24,7 +24,7 @@ a.msk-catBar:hover {
     background-color: #b02e1e;
     margin-left: 0px;
     padding: 10px 15px 8px;
-    width: 330px;
+    width: 266px;
     font-weight: 500;
     color: white;
 }
@@ -55,7 +55,7 @@ a.msk-catBar:hover {
 .msk-catBar.msk-catDefault > .msk-catText:hover {
     border-bottom: 2px solid #b02e1e;
     background-color: #942719;
-    width: 326px;
+    width: 262px;
 }
 .msk-catInfo > .msk-catSplit {
     background: white none repeat scroll 0 0;

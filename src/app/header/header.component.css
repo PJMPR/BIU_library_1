@@ -51,7 +51,7 @@
     border: none;
     outline: none;
     margin-top: 34px;
-    margin-left: -40px;
+    margin-left: -150px;
 }
 .cart-button2 {
     background-color: #ee811f;
@@ -68,8 +68,8 @@
     color: inherit;
     border: none;
     outline: none;
-    margin-top: -17px;
-    margin-left: -30px;
+    margin-top: 6px;
+    margin-left: -270px;
 }
 
 .cart-button:hover{

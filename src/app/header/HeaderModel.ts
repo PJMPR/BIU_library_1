@@ -1,4 +1,4 @@
 export class HeaderModel{
-    constructor(public username: string, public numberOfMessages: number){
+    constructor(public username: string, public numberOfMessages: number, public inCart: number){
     }
 }
