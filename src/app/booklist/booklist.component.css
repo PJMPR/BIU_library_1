@@ -3,6 +3,7 @@ div.polaroid {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
 	padding-top: 0;
+	background: white;
   }
   
   div.pad {
@@ -17,12 +18,24 @@ div.polaroid {
 	width: 100%;
 	}
 	
-	.btn-primary {
+	.btn-primary{
+		background-color: #fe3228;
+		border-color: #fe3228;
+	}
+	.btn-primary_cart {
 		background-color: #2FCC91;
-		border: #2FCC91;
+		border-color: #2FCC91;
+		width: 88%;
+		color: white;
 	}
 	.btn-primary:hover {
-		color: #2FCC91;
+		color: #fe3228;
 		background-color: #fff;
-		border: #2FCC91;
+		border-color: #fe3228;
+	}
+	.btn-primary_cart:hover {
+		background-color: #fff;
+		border-color: #2FCC91;
+		width: 88%;
+		color: #2FCC91;
 	}
