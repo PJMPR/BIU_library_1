@@ -1,7 +1,21 @@
-#ksiazka{
-    margin-left:3%;
+/*#ksiazka{
+    margin-left:10%;
+    padding: 20px;
     float: left;
 }
 fieldset{
     text-align: center;
+}
+.bookList{
+    background-color: red;
+    height: auto;
+    width: 82%;
+    margin-top: -26%;
+    margin-left: 20px;
+    float: right;
+    padding: 10px;
+}*/
+
+.btn-product{
+	width: 100%;
 }

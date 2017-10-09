@@ -11,9 +11,9 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     MainPageComponent,
-    BooklistComponent,
-    RightMenuComponent,
     HeaderComponent,
+    RightMenuComponent,
+    BooklistComponent
   ],
   imports: [
     BrowserModule

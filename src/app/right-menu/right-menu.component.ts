@@ -12,9 +12,9 @@ import {Category} from './category';
 export class RightMenuComponent implements OnInit {
 
   public model = {
-    listOfCategories: [new Category("Akcja", ["a1","b1","c1"]),
-      new Category("Fantasy", ["a2", "b2", "c2"]),
-      new Category("Kryminał", ["a3", "b3", "c3"])
+    listOfCategories: [new Category("AKCJA", ["Assembler","Matematyka dyskretna","Tu nie wiem XD"]),
+      new Category("FANTASY", ["Trójka z BIU", "Dotarcie do końca studiów", "Java"]),
+      new Category("KRYMINAŁ", ["Robienie w PHP", "Mówienie czcionka na font", "Spaghetti Code"])
     ]
   };
 

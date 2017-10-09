@@ -8,7 +8,7 @@ import { HeaderModel } from './HeaderModel'
 })
 export class HeaderComponent implements OnInit {
 
-public model = new HeaderModel("Library", "s13900", 5);
+public model = new HeaderModel("s13900", 5, 0);
   constructor() { }
 
   ngOnInit() {
