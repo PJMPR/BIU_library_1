@@ -9,6 +9,8 @@ export class RegisterComponent implements OnInit {
 
   constructor() { }
 
+  model={username:"",password:"",rPassword:""};
+
   ngOnInit() {
   }
 
