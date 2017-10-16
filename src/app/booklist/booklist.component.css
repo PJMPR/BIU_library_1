@@ -1,21 +1,41 @@
-/*#ksiazka{
-    margin-left:10%;
-    padding: 20px;
-    float: left;
-}
-fieldset{
-    text-align: center;
-}
-.bookList{
-    background-color: red;
-    height: auto;
-    width: 82%;
-    margin-top: -26%;
-    margin-left: 20px;
-    float: right;
-    padding: 10px;
-}*/
-
-.btn-product{
+div.polaroid {
 	width: 100%;
-}
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	padding-top: 0;
+	background: white;
+  }
+  
+  div.pad {
+	padding: 10px;
+	text-align: center;
+	font-size: 10px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  
+  
+  .btn-product {
+	width: 100%;
+	}
+	
+	.btn-primary{
+		background-color: #fe3228;
+		border-color: #fe3228;
+	}
+	.btn-primary_cart {
+		background-color: #2FCC91;
+		border-color: #2FCC91;
+		width: 88%;
+		color: white;
+	}
+	.btn-primary:hover {
+		color: #fe3228;
+		background-color: #fff;
+		border-color: #fe3228;
+	}
+	.btn-primary_cart:hover {
+		background-color: #fff;
+		border-color: #2FCC91;
+		width: 88%;
+		color: #2FCC91;
+	}

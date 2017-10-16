@@ -1,104 +1,54 @@
-<div class="container_booklist">
-    <div class="row">
-    	<div class="col-md-12">
-			<div class="col-sm-6booklist col-md-4booklist" *ngFor="let book of booklist1">
-				<div class="thumbnail">
-					<h4 class="text-center"><span class="label book_adventure">Przygodowa</span></h4>
-					<img src="{{book.image}}" class="img-responsive">
-					<div class="caption">
-						<div class="row">
-							<div class="col-md-6 col-xs-6 price">
-								<h4><label style="text-align: center;" >{{book.title}}</label></h4>
-							</div>
-						</div>
-						<div class="row" style="padding: 5px;">
-							<div class="col-md-6">
-								<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a> 
-							</div>
-						</div>
-						<div class="row" style="padding: 5px;">
-							<div class="col-md-6">
-								<a class="btn btn-primary_cart btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Dodaj do koszyka</a> 
-							</div>
-						</div>
-
-						<p> </p>
-					</div>
-				</div>
+<div class="container_fluid">
+	<div class="row">
+	  <div class="col-md-10">
+		<div class="col-sm-3 col-md-3 col-lg-3" *ngFor="let book of booklist1">
+		  <div class="polaroid">
+			<img src="{{book.image}}" class="img-responsive" style="width:100%">
+			<div class="caption">
+			  <div class="row">
+				<h5><label class="pad">{{book.title}}</label></h5>
+			  </div>
+			  <div class="row" style="padding-left: 18px; padding-right:18px;">
+				<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a>
+			  </div>
+			  <div class="row" style="padding: 3px;">
+				<a class="btn btn-primary_cart btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Dodaj do koszyka</a>
+			  </div>
+  
+			  <p> </p>
 			</div>
-
-						<p> </p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-12">
-					<div class="col-sm-6booklist col-md-4booklist" *ngFor="let book of booklist2">
-						<div class="thumbnail">
-							<h4 class="text-center"><span class="label book_fantasy">Fantasy</span></h4>
-							<img src="{{book.image}}" width="325px" height="500px" class="img-responsive">
-							<div class="caption">
-								<div class="row">
-									<div class="col-md-6 col-xs-6 price">
-										<h4><label style="text-align: center;" >{{book.title}}</label></h4>
-									</div>
-								</div>
-								<div class="row" style="padding: 5px;">
-									<div class="col-md-6">
-										<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a> 
-									</div>
-								</div>
-								<div class="row" style="padding: 5px;">
-									<div class="col-md-6">
-										<a class="btn btn-primary_cart btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Dodaj do koszyka</a> 
-									</div>
-								</div>
-		
-								<p> </p>
-							</div>
-						</div>
-					</div>
-		
-								<p> </p>
-							</div>
-						</div>
-
-
-								
+		  </div>
+		</div>
+  
+		<p> </p>
+	  </div>
+	</div>
+  
+	<div class="row">
+	  <div class="col-md-10">
+		<div class="col-sm-3 col-md-3 col-lg-3" *ngFor="let book of booklist2">
+		  <div class="polaroid">
+			<img src="{{book.image}}" class="img-responsive" style="width:100%">
+			<div class="caption">
+			  <div class="row">
+				<h5><label class="pad">{{book.title}}</label></h5>
+			  </div>
+			  <div class="row" style="padding-left: 18px; padding-right:18px;">
+				<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a>
+			  </div>
+			  <div class="row" style="padding: 3px;">
+				<a class="btn btn-primary_cart btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Dodaj do koszyka</a>
+			  </div>
+  
+			  <p> </p>
 			</div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <!--<div class="bookList"><fieldset>
-      <legend>Przygodowe</legend>
-
-      <div id="ksiazka"*ngFor="let book of booklist1">
-        <img src="{{book.image}}" style="width:169px;height:250px">
-        
-        <p>
-            <br>
-          {{book.title}}
-        </p>
-        <a href="">Szczegóły</a>
-      </div>
-    </fieldset>
-
-    <fieldset><legend>Fantasy</legend>
-      <div id="ksiazka"*ngFor="let book of booklist2">
-        <img src="{{book.image}}" style="width:169px;height:250px">
-        <p>
-          <br>
-          {{book.title}}
-        </p>
-        <a href="">Szczegóły</a>
-      </div>
-    
-    </fieldset>
-  </div>-->
-
+		  </div>
+		</div>
+  
+		<p> </p>
+	  </div>
+	</div>
+  
+  
+  </div>
+  
