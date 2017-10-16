@@ -10,6 +10,7 @@ import { BookPreviewComponent } from './book-preview/book-preview.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     BookPreviewComponent,
     RegisterComponent,
     LoginComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule
