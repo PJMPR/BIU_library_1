@@ -8,6 +8,8 @@ import { RightMenuComponent } from './right-menu/right-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { RegisterComponent } from './register/register.component';
     RightMenuComponent,
     BooklistComponent,
     BookPreviewComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule
