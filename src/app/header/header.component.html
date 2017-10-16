@@ -1,66 +1,100 @@
-<nav class="navbar navbar-findcond navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Library</a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-            <i class="fa fa-fw fa-bell-o"></i> Cart
-            <span class="badge"> {{model.inCart}}</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <!--<a href="#">
-            <span class="glyphicon glyphicon-envelope"></span>
-            {{model.numberOfMessages}}
-            <span class="sr-only">(current)</span>
-          </a>-->
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-            <i class="fa fa-fw fa-bell-o"></i> Inbox
-            <span class="badge">  {{model.numberOfMessages}}</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{model.username}}
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="#">opcja1</a>
+<div class="customTransparent">
+    <nav class="navbar navbar-findcond navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Library</a>
+          <a class="navbar-brand" href="#">Advanced Search</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="fa fa-fw fa-bell-o"></i> Cart
+                <span class="badge"> {{model.inCart}}</span>
+              </a>
             </li>
-            <li>
-              <a href="#">ocpja2</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="fa fa-fw fa-bell-o"></i> Inbox
+                <span class="badge"> {{model.numberOfMessages}}</span>
+              </a>
             </li>
-            <li class="divider"></li>
-            <li>
-              <a href="#">opcja3</a>
-            </li>
-            <li>
-              <a href="#exit">opcja4</a>
+            <li id="userDropdown" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{model.username}}
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">TWOJE KONTO</a>
+                </li>
+                <li>
+                  <a href="#">COSTAM</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">LOREMIPSUM</a>
+                </li>
+                <li>
+                  <a href="#exit">USTAWIENIA</a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-right search-form custom-search-input" role="search">
-        <div id="custom-search-input">
-          <div class="input-group col-md-12">
-            <input type="text" class="  search-query form-control" placeholder="Search..." />
-            <span class="input-group-btn">
-              <button class="btn btn-danger" type="button">
-                <span class=" glyphicon glyphicon-search"></span>
-              </button>
-            </span>
+          <div class="input-group-btn navbar">
+            <div class="btn-group" role="group">
+              <div class="dropdown dropdown-lg">
+  
+                <button type="button" class="btn btn-advSearch dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>
+                  <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right customDropdown" role="menu">
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label for="filter">Filtracja przez</label>
+                      <select class="form-control">
+                        <option value="0" selected>Wszystko</option>
+                        <option value="1">ID</option>
+                        <option value="2">Dostępność</option>
+                        <option value="3">Tytuł</option>
+                        <option value="4">Kategoria</option>
+                        <option value="5">Autor</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="contain">Filtruj</label>
+                      <input class="form-control" type="text" placeholder="Search..." />
+                    </div>
+                    <div class="form-group">
+                      <label for="contain">Tagi</label>
+                      <input class="form-control" type="text" placeholder="#Witam #Smoki" />
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-advSearch">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                  <input type="text" class=" form-control" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </nav>
   </div>
-</nav>
+  

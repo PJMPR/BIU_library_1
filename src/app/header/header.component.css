@@ -1,41 +1,97 @@
-nav.navbar-findcond { background: #fff; border-color: #ccc; box-shadow: 0 0 2px 0 #ccc; }
-nav.navbar-findcond a { color: #2FCC91; }
-nav.navbar-findcond ul.navbar-nav a { color: #2FCC91; border-style: solid; border-width: 0 0 2px 0; border-color: #fff; }
-nav.navbar-findcond ul.navbar-nav a:hover,
-nav.navbar-findcond ul.navbar-nav a:visited,
-nav.navbar-findcond ul.navbar-nav a:focus,
-nav.navbar-findcond ul.navbar-nav a:active { background: #fff; }
-nav.navbar-findcond ul.navbar-nav a:hover { border-color: #2FCC91; }
-nav.navbar-findcond li.divider { background: #ccc; }
-nav.navbar-findcond button.navbar-toggle { background: #2FCC91; border-radius: 2px; }
-nav.navbar-findcond button.navbar-toggle:hover { background: #999; }
-nav.navbar-findcond button.navbar-toggle > span.icon-bar { background: #fff; }
-nav.navbar-findcond ul.dropdown-menu { border: 0; background: #fff; border-radius: 1px; margin: 0px 0; box-shadow: 0 0 5px 0 #ccc; }
-nav.navbar-findcond ul.dropdown-menu > li > a { color: #444; }
-nav.navbar-findcond ul.dropdown-menu > li > a:hover { background: #2FCC91; color: #fff; }
-nav.navbar-findcond span.badge { background: #2FCC91; font-weight: normal; font-size: 11px; margin: 0 4px; }
-nav.navbar-findcond span.badge.new { background: rgba(255, 0, 0, 0.8); color: #fff; }
-
-.dropdown {
+nav.navbar-findcond {
+    background: #fff;
+    border-color: #ccc;
+    box-shadow: 0 0 2px 0 #ccc;
+  }
+  
+  nav.navbar-findcond a {
+    color: #2FCC91;
+  }
+  
+  nav.navbar-findcond ul.navbar-nav a {
+    color: #2FCC91;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #fff;
+  }
+  
+  nav.navbar-findcond ul.navbar-nav a:hover,
+  nav.navbar-findcond ul.navbar-nav a:visited,
+  nav.navbar-findcond ul.navbar-nav a:focus,
+  nav.navbar-findcond ul.navbar-nav a:active {
+    background: #fff;
+  }
+  
+  nav.navbar-findcond ul.navbar-nav a:hover {
+    border-color: #2FCC91;
+  }
+  
+  nav.navbar-findcond li.divider {
+    background: #ccc;
+  }
+  
+  nav.navbar-findcond button.navbar-toggle {
+    background: #2FCC91;
+    border-radius: 2px;
+  }
+  
+  nav.navbar-findcond button.navbar-toggle:hover {
+    background: #999;
+  }
+  
+  nav.navbar-findcond button.navbar-toggle>span.icon-bar {
+    background: #fff;
+  }
+  
+  nav.navbar-findcond ul.dropdown-menu {
+    border: 0;
+    background: #fff;
+    border-radius: 1px;
+    margin: 0px 0;
+    box-shadow: 0 0 5px 0 #ccc;
+    
+  }
+  
+  nav.navbar-findcond ul.dropdown-menu>li>a {
+    color: #444;
+  }
+  
+  nav.navbar-findcond ul.dropdown-menu>li>a:hover {
+    background: #2FCC91;
+    color: #fff;
+  }
+  
+  nav.navbar-findcond span.badge {
+    background: #2FCC91;
+    font-weight: normal;
+    font-size: 11px;
+    margin: 0 4px;
+  }
+  
+  nav.navbar-findcond span.badge.new {
+    background: rgba(255, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  .dropdown {
     position: relative;
     display: inline-block;
     margin-top: 6px;
-}
-
-.dropdown:hover {
+  }
+  
+  .dropdown:hover {
     background-color: #fff;
-    
-}
-
-.dropdown:hover .links {
+  }
+  
+  .dropdown:hover .links {
     color: #000;
-}
-
-.dropdown:hover .dropdown-menu {
+  }
+  
+  .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-.dropdown .dropdown-menu {
+  }
+  
+  .dropdown .dropdown-menu {
     position: absolute;
     top: 100%;
     display: none;
@@ -46,32 +102,28 @@ nav.navbar-findcond span.badge.new { background: rgba(255, 0, 0, 0.8); color: #f
     border-radius: 0;
     margin-top: -15px;
     margin-left: -45px;
-    box-shadow: none;
-}
-
-#custom-search-input {
-    margin:0;
-    margin-top: 4px;
+  }
+  
+  #custom-search-input {
+    margin: 0;
+    margin-top: 5.75px;
     padding: 0;
-    width: 400px;
-}
-
-
-#custom-search-input .search-query {
+  }
+  
+  #custom-search-input .search-query {
     padding-right: 3px;
     padding-right: 4px \9;
     padding-left: 3px;
     padding-left: 4px \9;
     color: #2FCC91;
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-}
-
-#custom-search-input button {
+  }
+  
+  #custom-search-input button {
     border: 0;
     background: none;
     /** belows styles are working good */
@@ -84,9 +136,78 @@ nav.navbar-findcond span.badge.new { background: rgba(255, 0, 0, 0.8); color: #f
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    color:#2FCC91;
-}
-
-.search-query:focus + button {
-    z-index: 3;   
-}
+    color: #2FCC91;
+  }
+  
+  .search-query:focus+button {
+    z-index: 3;
+  }
+  
+  .customTransparent {
+    opacity: 1;
+    z-index: 10;
+    position: fixed;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+      margin-top: -1px;
+      padding: 6px 20px;
+  }
+  .input-group-btn .btn-group {
+      display: flex !important;
+  }
+  .btn-group .btn {
+      border-radius: 0;
+      margin-left: -1px;
+  }
+  .btn-group .btn:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+  }
+  .btn-group .form-horizontal .btn[type="submit"] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .form-horizontal .form-group {
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .form-group .form-control:last-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+  }
+  
+  .btn-advSearch{
+      border-color: #2FCC91;
+      background: #2FCC91;
+      color: white;
+  }
+  
+  .btn-advSearch:hover{
+      background: white;
+      border-color: #2FCC91;
+      color: #2FCC91;
+  }
+  
+  .btn-advSearch:active{
+      background: white;
+      color: black;
+  }
+  
+  .customDropdown{
+      border: 20px;
+      width: 300px;
+      background: rgb(180, 61, 61);
+      border-radius: 1px;
+      margin: 0px 0;
+      box-shadow: 0 0 5px 0 #2FCC91;
+  }
+  
+  input[type=text], textarea {
+      border: 1px solid #DDDDDD;
+    }
+     
+    input[type=text]:focus, textarea:focus {
+      box-shadow: 0 0 5px#2FCC91;
+      border: 1px solid #2FCC91;
+    }
+  
