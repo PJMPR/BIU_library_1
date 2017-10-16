@@ -13,18 +13,18 @@
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input">
+                      <input type="checkbox" class="form-check-input" [(ngModel)]="search.showTitle" [ngModelOptions]="{standalone: true}">
                       Tytule
                     </label>
                   </div>
                   <div class="form-check">
                       <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
+                        <input type="checkbox" class="form-check-input" [(ngModel)]="search.showPublisher" [ngModelOptions]="{standalone: true}">
                         Wydawnictwie
                       </label>
                     </div>
                 <hr />
-              <div class="form-group">
+              <div class="form-group" *ngIf="search.showTitle">
                 <label for="exampleInputEmail1">Tytuł</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Wpisz tytuł">
               </div>
@@ -34,7 +34,7 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Wpisz autora">
               </div>
 
-              <div class="form-group">
+              <div class="form-group" *ngIf="search.showPublisher">
                   <label for="exampleInputEmail1">Wydawnictwo</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Wpisz nazwę wydawnictwa">
                 </div>
