@@ -1,0 +1,74 @@
+<div class="container">
+    <form #myForm="ngForm"
+    novalidate
+  >
+
+<div class="data">
+  <label for="firstName">Imię: </label>
+  <input type="text" name="firstName" class="form-control"
+    required
+    #firstName="ngModel"
+    [(ngModel)]="model.firstName"
+  />
+
+
+  <label for="lastName">Nazwisko: </label><br>
+  <input type="text" name="lastName" class="form-control" required #lastName="ngModel" [(ngModel)]="model.lastName"><br><br>
+
+
+  <label for="pesel">Pesel:</label><br>
+  <input type="text" name="pesel" class="form-control" required #pesel="ngModel" [(ngModel)]="model.pesel"><br><br>
+
+</div>
+
+<div class="address">
+<h1>Podaj adres zameldowania: <br><br></h1> 
+
+<label for="streetName"> Nazwa ulicy: </label> <input type="text" name="streetName" class="form-control" required #streetName="ngModel" [(ngModel)]="model.streetName"> <br>
+
+
+<label for="cityName"> Miasto: </label> <input type="text" name="cityName" class="form-control" required #cityName="ngModel" [(ngModel)]="model.cityName"> <br>
+
+
+<label for="houseNumber"> Numer domu: </label> <input type="text" name="houseNumber" class="form-control" required #houseNumber="ngModel" [(ngModel)]="model.houseNumber"> <br>
+
+
+<label for="localNumber"> Numer mieszkania / lokalu: </label> <input type="text" name="localNumber" class="form-control" required #localNumber="ngModel" [(ngModel)]="model.localNumber"> <br>
+
+
+<label for="postcode1"> Kod pocztowy: </label> <input type="text" name="postcode1" class="form-control" required #postcode1="ngModel" [(ngModel)]="model.postcode1"> - <label for="postcode2">
+        </label> <input type="text" name="postcode2" class="form-control" required #postcode2="ngModel" [(ngModel)]="model.postcode2">  <br>
+
+</div> 
+
+
+
+
+<br><br>
+<label>Aby wprowadzić adres korespondencyjny: <input type="checkbox" ng-model="personalData"></label><br/> <br><br>
+
+<div class="addressK" *ngIf="checkboxIsVisible">
+<h1>Podaj adres korespondencyjny:</h1> 
+
+
+<label for="streetNameK"> Nazwa ulicy: </label> <input type="text" name="streetNameK" class="form-control" required #streetName="ngModel" [(ngModel)]="model.streetNameK"> <br>
+
+
+<label for="cityNameK"> Miasto: </label> <input type="text" name="cityNameK" class="form-control" required #cityName="ngModel" [(ngModel)]="model.cityNameK"> <br>
+
+
+<label for="houseNumberK"> Numer domu: </label> <input type="text" name="houseNumberK" class="form-control" required #houseNumber="ngModel" [(ngModel)]="model.houseNumberK"> <br>
+
+
+<label for="localNumberK"> Numer mieszkania / lokalu: </label> <input type="text" name="localNumberK" class="form-control" required #localNumber="ngModel" [(ngModel)]="model.localNumberK"> <br>
+
+
+<label for="postcode1K"> Kod pocztowy: </label> <input type="text" name="postcode1K" class="form-control" required #postcode1="ngModel" [(ngModel)]="model.postcode1K"> - <label for="postcode2K">
+        </label> <input type="text" name="postcode2K" class="form-control" required #postcode2="ngModel" [(ngModel)]="model.postcode2K">  <br>
+</div> 
+
+<button type="submit" class="btn-primary">OK</button>
+
+</form>
+
+</div>
