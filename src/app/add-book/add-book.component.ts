@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddBookComponent implements OnInit {
 
+  public title : string;
+  public author : string;
+  public isbn : string;
+  public publisher : string;
+  public quantity : string;
+  public tableOfContents : string;
+  public description : string;
+  public tags : string;
+
   constructor() { }
 
   ngOnInit() {
