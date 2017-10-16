@@ -19,6 +19,7 @@ nav.navbar-findcond span.badge.new { background: rgba(255, 0, 0, 0.8); color: #f
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-top: 6px;
 }
 
 .dropdown:hover {
@@ -89,7 +90,7 @@ nav.navbar-findcond span.badge.new { background: rgba(255, 0, 0, 0.8); color: #f
 
 
 .customTransparent{
-    opacity: 0.95;
+    opacity: 1;
     z-index: 10;
     position: fixed;
 }
