@@ -7,6 +7,7 @@ import { BooklistComponent } from './booklist/booklist.component';
 import { RightMenuComponent } from './right-menu/right-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BookPreviewComponent } from './book-preview/book-preview.component';
     HeaderComponent,
     RightMenuComponent,
     BooklistComponent,
-    BookPreviewComponent
+    BookPreviewComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule
