@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from '../right-menu/category';
 import { SearchModel } from './SearchModel';
+import { NgModel } from '@angular/forms';
+import { NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
@@ -9,8 +11,11 @@ import { SearchModel } from './SearchModel';
 })
 export class SearchComponent implements OnInit {
 
-  myForm: SearchModel;
-  constructor() { }
+  search:SearchModel = new SearchModel();
+
+  constructor() { 
+
+  }
 
   ngOnInit() {
   }
