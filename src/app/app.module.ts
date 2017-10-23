@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -19,7 +20,8 @@ import { SearchComponent } from './search/search.component';
     RightMenuComponent,
     BooklistComponent,
     BookPreviewComponent,
-    SearchComponent
+    SearchComponent,
+    RouterModule
   ],
   imports: [
     BrowserModule,
