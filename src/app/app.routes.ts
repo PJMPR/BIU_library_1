@@ -32,6 +32,32 @@ export var appRoutes: Routes = [
         ]
     },
     {
+        path: 'userprofile',
+        component: LoginComponent,
+        children:[
+            {
+                path:'',
+                component: LoginComponent
+            },
+            {
+                path:'login',
+                component: LoginComponent
+            },
+            {
+                path:'register',
+                component: RegisterComponent
+            },
+            {
+                path:'personaldata',
+                component: PersonalDataComponent
+            },
+            {
+                path:'changepassword',
+                component: ChangePasswordComponent
+            },
+        ]
+    },
+    {
         path: '',
         redirectTo:'/home',
         pathMatch:'full'
