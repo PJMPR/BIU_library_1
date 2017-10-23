@@ -1,3 +1,4 @@
+import { UserprofileComponent } from './userprofile/userprofile.component';
 import { Routes } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
 import { BooklistComponent } from './booklist/booklist.component';
@@ -33,7 +34,7 @@ export var appRoutes: Routes = [
     },
     {
         path: 'userprofile',
-        component: LoginComponent,
+        component: UserprofileComponent,
         children:[
             {
                 path:'',

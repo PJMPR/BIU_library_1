@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="customTransparent">
+      <nav class="navbar navbar-findcond navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a routerLink="/userprofile/login" class="navbar-brand">Login</a>
+            <a routerLink="/userprofile/register" class="navbar-brand">Register</a>
+            <a routerLink="/userprofile/personaldata" class="navbar-brand" >Personal Data</a>
+            <a routerLink="/userprofile/changepassword" class="navbar-brand" >Change Password</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+        <div class="col-md-10" style="margin-left: 450px;">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
