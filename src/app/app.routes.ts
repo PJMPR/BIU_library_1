@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
+import { BooklistComponent } from './booklist/booklist.component';
+import { HeaderComponent } from './header/header.component';
+import { RightMenuComponent } from './right-menu/right-menu.component';
 import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
-import { HeaderComponent } from './header/header.component';
 import { RegisterComponent } from './register/register.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
-import { BooklistComponent } from './booklist/booklist.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
@@ -21,6 +22,20 @@ export var appRoutes: Routes = [
         component: MainPageComponent
     },
     {
+        path:'booklist',
+        component: BooklistComponent
+    },
+    {
+        path:'header',
+        component: HeaderComponent
+    },
+    {
+        path:'rightmenu',
+        component: RightMenuComponent
+    },
+    {
+        path:'advancedsearch',
+        component: SearchComponent},
         path: 'search',
         component: SearchComponent
     },
@@ -59,6 +74,7 @@ export var appRoutes: Routes = [
     {
         path: 'book/content',
         component: ContentListComponent
+
     }
 
 
