@@ -8,7 +8,7 @@
             <ul class="public-image-tag-m">
                 <li class="public-image-category-a selected" *ngFor="let item of model.listOfCategories">{{item.name}}                     
                       <ul>
-                        <li class="public-image-tag-a" *ngFor="let item2 of item.subCategories">{{item2}}</li>
+                        <li class="public-image-tag-a" *ngFor="let item2 of item.subCategories"><a href="/booklist"> {{item2}} </a></li>
                          </ul>
                 </li>            
 
