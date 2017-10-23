@@ -28,6 +28,7 @@
 
       <label for="Rpassword">Repeat password</label>
       <input type="password" class="form-control" id="Rpassword" name="Rpassword" placeholder="Repeat password"
+      validateEqual="password"
       required
       #rPassword="ngModel"
       Equalvalidate="password"
@@ -42,6 +43,6 @@
       <label for="email">Email</label>
       <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
     </div>
-    <button routerLink="/home" [disabled]="loginForm.invalid && loginForm.touched" type="submit" class="btn btn-primary">Submit</button>
+    <button routerLink="/home" [disabled]="(loginForm.invalid && loginForm.touched) || loginForm.untouched" type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>

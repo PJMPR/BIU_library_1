@@ -1,12 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
 import { FormsModule }from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NgIf } from '@angular/common';
-=======
-import { FormsModule }   from '@angular/forms';
->>>>>>> feature/s13900/IS40/dev
 
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -22,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { appRoutes } from './app.routes';
+import { EqualValidatorDirective } from './equal-validator.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,17 +33,14 @@ import { appRoutes } from './app.routes';
     RegisterComponent,
     LoginComponent,
     ChangePasswordComponent,
-    AddBookComponent
+    AddBookComponent,
+    EqualValidatorDirective
 
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
     FormsModule,
     RouterModule.forRoot(appRoutes)
-=======
-    FormsModule    
->>>>>>> feature/s13900/IS40/dev
   ],
   providers: [],
   bootstrap: [AppComponent]

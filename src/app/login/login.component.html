@@ -2,11 +2,25 @@
   <form>
     <div class="form-group">
       <label for="username">Username</label>
-      <input type="text" class="form-control" id="username" name="username" required>
+      <input type="text" class="form-control" id="username" name="username"
+      required 
+      #username="ngModel"
+      [(ngModel)]="model.username"
+      >
+      <div *ngIf="username.invalid && username.touched" class="form-group col-md-3">
+        <span class="text-danger">Username must be filled</span>
+      </div>
     </div>
     <div class="form-group">
       <label for="password">Password</label>
-      <input type="password" class="form-control" id="password" name="password" required>
+      <input type="password" class="form-control" id="password" name="password"
+      required
+      #password="ngModel"
+      [(ngModel)]="model.password"
+      >
+      <div *ngIf="password.invalid && password.touched" class="form-group col-md-3">
+        <span class="text-danger">Password must be filled</span>
+      </div>
     </div>
     <div class="form-check inlineDisplay">
       <label class="form-check-label">
