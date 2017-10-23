@@ -9,12 +9,13 @@ import { BooklistComponent } from './booklist/booklist.component';
 import { RightMenuComponent } from './right-menu/right-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { ContentListComponent } from './content-list/content-list.component';
+import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { SearchComponent } from './search/search.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { AddBookComponent } from './add-book/add-book.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +24,14 @@ import { AddBookComponent } from './add-book/add-book.component';
     RightMenuComponent,
     BooklistComponent,
     BookPreviewComponent,
+    ContentListComponent,
+    PersonalDataComponent
     SearchComponent,
     RegisterComponent,
     LoginComponent,
     ChangePasswordComponent,
     AddBookComponent
+
   ],
   imports: [
     BrowserModule,
