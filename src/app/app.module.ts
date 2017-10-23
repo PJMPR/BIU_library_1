@@ -10,11 +10,14 @@ import { BooklistComponent } from './booklist/booklist.component';
 import { RightMenuComponent } from './right-menu/right-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { ContentListComponent } from './content-list/content-list.component';
+import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { SearchComponent } from './search/search.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { AddBookComponent } from './add-book/add-book.component';
+import { appRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,14 @@ import { AddBookComponent } from './add-book/add-book.component';
     RightMenuComponent,
     BooklistComponent,
     BookPreviewComponent,
-    SearchComponent,
-    RouterModule
+    ContentListComponent,
+    PersonalDataComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
