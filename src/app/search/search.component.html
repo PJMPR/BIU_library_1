@@ -1,16 +1,17 @@
 <div class="container">
   <div class="row">
+    <div class="col-md-8">
+        <img class="search-img" src="assets/img/search.png" />
+    </div>
       <div class="col-md-10">
           <form>
-              <hr />
-              
               <legend>Szukaj po: </legend>
               <div class="form-check">
                   <label class="form-check-label">
                     <input type="checkbox" class="form-check-input" [(ngModel)]="search.showAuthor" [ngModelOptions]="{standalone: true}"/>
                     Autorze
                   </label>
-                </div>
+               </div>
                 <div class="form-check">
                     <label class="form-check-label">
                       <input type="checkbox" class="form-check-input" [(ngModel)]="search.showTitle" [ngModelOptions]="{standalone: true}">
@@ -23,21 +24,32 @@
                         Wydawnictwie
                       </label>
                     </div>
-                <hr />
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" [(ngModel)]="search.showTags" [ngModelOptions]="{standalone: true}">
+                          Tagach
+                        </label>
+                      </div>
+                    <hr />
               <div class="form-group" *ngIf="search.showTitle">
                 <label for="exampleInputEmail1">Tytuł</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Wpisz tytuł">
               </div>
               
               <div class="form-group" *ngIf="search.showAuthor">
-                <label for="exampleInputPassword1">Autor</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Wpisz autora">
+                <label for="exampleInputEmail1">Autor</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Wpisz autora">
               </div>
 
               <div class="form-group" *ngIf="search.showPublisher">
                   <label for="exampleInputEmail1">Wydawnictwo</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Wpisz nazwę wydawnictwa">
                 </div>
+
+                <div class="form-group" *ngIf="search.showTags">
+                    <label for="exampleInputEmail1">Tagi</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Wpisz tagi">
+                  </div>
               <fieldset class="form-group">
                 <legend>Wypożyczone: </legend>
                 <div class="form-check">
@@ -54,13 +66,13 @@
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" checked>
                       Ostatnie trzy tygodnie
                     </label>
                   </div>
                   <div class="form-check">
                       <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4" checked>
                         Ostatni miesiąc
                       </label>
                     </div>
@@ -71,18 +83,17 @@
                   </label>
                 </div>-->
               </fieldset>
-              <hr />
               <fieldset class="form-group">
                   <legend>Dostępność: </legend>
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      <input type="radio" class="form-check-input" name="availability" id="availability1" value="availability1" checked>
                       Dostępne
                     </label>
                   </div>
                   <div class="form-check">
                   <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                      <input type="radio" class="form-check-input" name="availability" id="availability2" value="availability2">
                       Niedostępne
                     </label>
                   </div>
@@ -93,12 +104,12 @@
                     </label>
                   </div>-->
                 </fieldset>
-              <div class="form-check">
+              <!--<div class="form-check">
                 <label class="form-check-label">
                   <input type="checkbox" class="form-check-input">
                   Dostępne
                 </label>
-              </div>
+              </div>-->
               <button type="submit" class="btn btn-primary">Niuchaj</button>
         
             </form>

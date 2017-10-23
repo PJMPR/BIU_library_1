@@ -11,5 +11,6 @@ export class SearchModel {
     public showAuthor: boolean;
     public showTitle: boolean;
     public showPublisher: boolean;
+    public showTags: boolean;
     constructor(){}
 }
