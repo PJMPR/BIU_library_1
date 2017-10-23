@@ -11,6 +11,10 @@ import { RightMenuComponent } from './right-menu/right-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
 import { SearchComponent } from './search/search.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   declarations: [
