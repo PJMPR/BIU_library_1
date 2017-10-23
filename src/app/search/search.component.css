@@ -35,3 +35,12 @@
     margin-left: -100px;
     margin-top: 150px;
   }
+  .btn-primary{
+    background-color: #2FCC91;
+    border-color: #2FCC91;
+  }
+  .btn-primary:hover{
+    background-color: #fff;
+    border-color: #2FCC91;
+    color: #2FCC91;
+  }
