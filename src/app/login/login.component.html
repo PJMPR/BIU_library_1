@@ -1,5 +1,6 @@
 <div class="container">
-  <form>
+  <form #loginForm="ngForm"
+  novalidate>
     <div class="form-group">
       <label for="username">Username</label>
       <input type="text" class="form-control" id="username" name="username"
@@ -31,7 +32,7 @@
       <a routerLink="/login/changepassword">Forgot password?</a>
     </div>
     <div>
-      <button routerLink="/home" type="submit" class="btn btn-primary">Login</button>
+      <button routerLink="/home" [disabled]="(loginForm.invalid && loginForm.touched) || loginForm.untouched" type="submit" class="btn btn-primary">Login</button>
     </div>
   </form>
 </div>
