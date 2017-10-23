@@ -1,6 +1,6 @@
 <div class="container">
 
-  <form #loginForm="ngForm"
+  <form #registerForm="ngForm"
   novalidate>
     <div class="form-group">
       <label for="username">Username</label>
@@ -31,7 +31,6 @@
       validateEqual="password"
       required
       #rPassword="ngModel"
-      Equalvalidate="password"
       [(ngModel)]="model.rPassword"
       >
       <div *ngIf="rPassword.invalid && rPassword.touched" class="form-group col-md-3">
@@ -41,8 +40,12 @@
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"
+      required
+      #email="ngModel"
+      [(ngModel)]="model.email"
+      >
     </div>
-    <button routerLink="/home" [disabled]="(loginForm.invalid && loginForm.touched) || loginForm.untouched" type="submit" class="btn btn-primary">Submit</button>
+    <button routerLink="/home" [disabled]="(registerForm.invalid && registerForm.touched) || registerForm.untouched" type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
