@@ -15,11 +15,26 @@ import { ContentListComponent } from './content-list/content-list.component';
 export var appRoutes: Routes = [
     {
         path: 'home',
-        component: MainPageComponent
+        component: MainPageComponent,
+        children:[
+            {
+                path:'',
+                component:BooklistComponent
+            },
+            {
+                path:'books',
+                component:BooklistComponent
+            },
+            {
+                path:'add',
+                component:AddBookComponent
+            }
+        ]
     },
     {
         path: '',
-        component: MainPageComponent
+        redirectTo:'/home',
+        pathMatch:'full'
     },
     {
         path:'booklist',
@@ -35,8 +50,6 @@ export var appRoutes: Routes = [
     },
     {
         path:'advancedsearch',
-        component: SearchComponent},
-        path: 'search',
         component: SearchComponent
     },
     {

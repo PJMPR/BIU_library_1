@@ -29,7 +29,11 @@ import { appRoutes } from './app.routes';
     BookPreviewComponent,
     ContentListComponent,
     PersonalDataComponent,
-    SearchComponent
+    SearchComponent,
+    LoginComponent,
+    RegisterComponent,
+    ChangePasswordComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,
