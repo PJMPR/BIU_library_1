@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChangePasswordComponent implements OnInit {
 
+  model={username:"",newPassword:"",rNewPassword:""};
+
   constructor() { }
 
   ngOnInit() {
