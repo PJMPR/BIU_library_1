@@ -26,6 +26,10 @@ export var appRoutes: Routes = [
                 component:BooklistComponent
             },
             {
+                path:'books/:bookid',
+                component:BookPreviewComponent
+            },
+            {
                 path:'add',
                 component:AddBookComponent
             }
