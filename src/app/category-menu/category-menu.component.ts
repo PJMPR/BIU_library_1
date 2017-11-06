@@ -5,11 +5,11 @@ import {
 import {Category} from './category';
 
 @Component({
-  selector: 'right-menu',
-  templateUrl: './right-menu.component.html',
-  styleUrls: ['./right-menu.component.css']
+  selector: 'category-menu',
+  templateUrl: './category-menu.component.html',
+  styleUrls: ['./category-menu.component.css']
 })
-export class RightMenuComponent implements OnInit {
+export class CategoryMenuComponent implements OnInit {
 
   public model = {
     listOfCategories: [
