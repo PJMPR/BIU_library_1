@@ -35,7 +35,7 @@
         <h3>{{model.title}}</h3>
         <h3>{{model.publisher}}</h3>
         <h3 *ngFor="let author of model.authors">{{author}}</h3>
-        <app-tabs></app-tabs>
+        <app-tabs [bookid]="bookid"></app-tabs>
 <!--
         <br /><hr /><h3>{{model.title}}</h3>
         <h4>Tytuł</h4><hr /><h3>{{model.publisher}}</h3>
