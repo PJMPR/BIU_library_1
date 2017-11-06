@@ -6,7 +6,7 @@ import { CategoryMenuComponent } from './category-menu/category-menu.component';
 import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
@@ -29,7 +29,7 @@ export var appRoutes: Routes = [
             },
             {
                 path:'books/:bookid',
-                component:BookPreviewComponent,
+                component:BookDetailsComponent,
                 children:[
                     {
                         path:'content',

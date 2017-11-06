@@ -9,7 +9,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { BooklistComponent } from './booklist/booklist.component';
 import { CategoryMenuComponent } from './category-menu/category-menu.component';
 import { HeaderComponent } from './header/header.component';
-import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { SearchComponent } from './search/search.component';
@@ -29,7 +29,7 @@ import { SimilarBooksComponent } from './similar-books/similar-books.component';
     HeaderComponent,
     CategoryMenuComponent,
     BooklistComponent,
-    BookPreviewComponent,
+    BookDetailsComponent,
     ContentListComponent,
     PersonalDataComponent,
     SearchComponent,
