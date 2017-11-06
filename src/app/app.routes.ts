@@ -11,6 +11,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { AddBookComponent } from './add-book/add-book.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { ContentListComponent } from './content-list/content-list.component';
+import { SimilarBooksComponent } from './similar-books/similar-books.component';
+import { DescriptionComponent } from './description/description.component';
 
 export var appRoutes: Routes = [
     {
@@ -78,11 +80,11 @@ export var appRoutes: Routes = [
             },
             {
                 path:'description',
-                component:ContentListComponent
+                component:DescriptionComponent
             },
             {
                 path:'similarBooks',
-                component:ContentListComponent
+                component:SimilarBooksComponent
             }
         ]
     },
