@@ -18,6 +18,9 @@ import { LoginComponent } from './login/login.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { appRoutes } from './app.routes';
+import { TabsComponent } from './tabs/tabs.component';
+import { DescriptionComponent } from './description/description.component';
+import { SimilarBooksComponent } from './similar-books/similar-books.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { appRoutes } from './app.routes';
     LoginComponent,
     RegisterComponent,
     ChangePasswordComponent,
-    AddBookComponent
+    AddBookComponent,
+    TabsComponent,
+    DescriptionComponent,
+    SimilarBooksComponent
   ],
   imports: [
     BrowserModule,

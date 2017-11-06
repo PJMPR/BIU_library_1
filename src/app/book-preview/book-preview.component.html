@@ -21,6 +21,22 @@
     </div>
     <div class="col-md-10">
       <div class="content">
+        <button>
+            <span>
+              <ng-container *ngIf="model.quantity > 0; then thenTemplate; else elseTemplate"></ng-container>
+              <ng-template #thenTemplate>
+                Dodaj do koszyka
+              </ng-template>
+              <ng-template #elseTemplate>
+                Zarezerwuj
+              </ng-template>
+           </span>
+          </button>
+        <h3>{{model.title}}</h3>
+        <h3>{{model.publisher}}</h3>
+        <h3 *ngFor="let author of model.authors">{{author}}</h3>
+        <app-tabs></app-tabs>
+<!--
         <br /><hr /><h3>{{model.title}}</h3>
         <h4>Tytuł</h4><hr /><h3>{{model.publisher}}</h3>
         <h4>Wydawnictwo</h4><hr /><h3 *ngFor="let author of model.authors">{{author}}<h4>Autor</h4></h3><hr />
@@ -35,6 +51,7 @@
             </ng-template>
          </span>
         </button>
+-->
       </div>
     </div>
   </div>

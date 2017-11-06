@@ -11,6 +11,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { AddBookComponent } from './add-book/add-book.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { ContentListComponent } from './content-list/content-list.component';
+import { SimilarBooksComponent } from './similar-books/similar-books.component';
+import { DescriptionComponent } from './description/description.component';
 
 export var appRoutes: Routes = [
     {
@@ -27,7 +29,22 @@ export var appRoutes: Routes = [
             },
             {
                 path:'books/:bookid',
-                component:BookPreviewComponent
+                component:BookPreviewComponent,
+                children:[
+                    {
+                        path:'content',
+                        component:ContentListComponent
+                    },
+                    {
+                        path:'description',
+                        component:DescriptionComponent
+                    },
+                    {
+                        path:'similarBooks',
+                        component:SimilarBooksComponent
+
+                    }
+                ]
             },
             {
                 path:'add',
@@ -77,23 +94,6 @@ export var appRoutes: Routes = [
     {
         path: 'register',
         component: RegisterComponent
-    },
-    {
-        path: 'book',
-        children:[
-            {
-                path:'0',
-                component:BookPreviewComponent
-            },
-            {
-                path:'1',
-                component:BookPreviewComponent
-            },
-            {
-                path:'2',
-                component:BookPreviewComponent
-            }
-        ]
     },
     {
         path: 'book/list',
