@@ -13,6 +13,7 @@ sectionList=[{tytul:"Tom Pierwszy", podtytuly:"Wiosna"},{tytul:"Tom Drugi", podt
 ngOnInit() {
 }
 }
+
 export class ContentTreeNode{
 constructor(
 public Section:string,

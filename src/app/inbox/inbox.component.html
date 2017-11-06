@@ -1,0 +1,18 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"><input type="checkbox"></th>
+      <th scope="col">Nadawca</th>
+      <th scope="col">Treść</th>
+      <th scope="col">Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let message of messages">
+      <th scope="row"><input type="checkbox"></th>
+      <td>{{message.sender}}</td>
+      <td>{{message.contents}}</td>
+      <td>{{message.dateOfMessage}}</td>
+    </tr>
+  </tbody>
+</table>
