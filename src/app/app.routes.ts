@@ -29,7 +29,22 @@ export var appRoutes: Routes = [
             },
             {
                 path:'books/:bookid',
-                component:BookPreviewComponent
+                component:BookPreviewComponent,
+                children:[
+                    {
+                        path:'content',
+                        component:ContentListComponent
+                    },
+                    {
+                        path:'description',
+                        component:DescriptionComponent
+                    },
+                    {
+                        path:'similarBooks',
+                        component:SimilarBooksComponent
+
+                    }
+                ]
             },
             {
                 path:'add',
@@ -48,7 +63,17 @@ export var appRoutes: Routes = [
     },
     {
         path:'header',
-        component: HeaderComponent
+        component: HeaderComponent,
+        children:[
+            {
+                path:'',
+                component:BooklistComponent
+            },
+            {
+                path:'add',
+                component:AddBookComponent
+            }
+        ]
     },
     {
         path:'rightmenu',
@@ -69,24 +94,6 @@ export var appRoutes: Routes = [
     {
         path: 'register',
         component: RegisterComponent
-    },
-    {
-        path: 'book',
-        component: BookPreviewComponent,
-        children:[
-            {
-                path:'content',
-                component:ContentListComponent
-            },
-            {
-                path:'description',
-                component:DescriptionComponent
-            },
-            {
-                path:'similarBooks',
-                component:SimilarBooksComponent
-            }
-        ]
     },
     {
         path: 'book/list',

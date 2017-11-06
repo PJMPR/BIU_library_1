@@ -1,3 +1,36 @@
 .inlineDisplay{
     display: inline;
 }
+.col-md-3 {
+    margin: 0px;
+    margin-top: 100px;
+  }
+  .container {
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 300px;
+}
+.btn-primary{
+    background-color: #2FCC91;
+    border-color: #2FCC91;
+  }
+  .btn-primary:hover{
+    background-color: #fff;
+    border-color: #2FCC91;
+    color: #2FCC91;
+  }
+  .forgot_pwd {
+    color: #2FCC91;
+  }
+  .forgot_pwd:hover {
+    color: rgb(51, 158, 117);
+    text-decoration: none;
+  }
+  .btn-primary:visited,  .btn-primary:active,  .btn-primary:link  {
+    text-decoration: none;
+}
+input[type=text]:focus, input[type=password]:focus, button[type=submit]:focus, textarea:focus {
+  border: 1px solid #2FCC91;
+}
+
+  
