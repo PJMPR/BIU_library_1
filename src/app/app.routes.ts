@@ -76,7 +76,20 @@ export var appRoutes: Routes = [
     },
     {
         path: 'book',
-        component: BookPreviewComponent
+        children:[
+            {
+                path:'0',
+                component:BookPreviewComponent
+            },
+            {
+                path:'1',
+                component:BookPreviewComponent
+            },
+            {
+                path:'2',
+                component:BookPreviewComponent
+            }
+        ]
     },
     {
         path: 'book/list',
