@@ -9,9 +9,9 @@
                 <li class="public-image-category-a selected" *ngFor="let item of model.listOfCategories">{{item.name}}                     
                       <ul *ngFor="let item2 of item.subCategories; let i = index">
                         <li class="public-image-tag-a">
-                          <a routerLink="/home/books" *ngIf='i == 0 && item.name == "Książki"'>{{item2}} </a>
-                          <a routerLink="/home/books" *ngIf='i == 1 && item.name == "Książki"'>{{item2}} </a>
-                          <a routerLink="/home/books" *ngIf='i == 2 && item.name == "Książki"'>{{item2}} </a>
+                          <a routerLink="/books" *ngIf='i == 0 && item.name == "Książki"'>{{item2}} </a>
+                          <a routerLink="/books" *ngIf='i == 1 && item.name == "Książki"'>{{item2}} </a>
+                          <a routerLink="/books" *ngIf='i == 2 && item.name == "Książki"'>{{item2}} </a>
                         </li>
                         <li class="public-image-tag-a">
                             <a routerLink="/advancedsearch" *ngIf='i == 0 && item.name == "Wyszukiwarka"'>{{item2}} </a>

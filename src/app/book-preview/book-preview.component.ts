@@ -10,12 +10,13 @@ import { ActivatedRoute } from '@angular/router';
 export class BookPreviewComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
-model:BookModel = new BookModel(
-'https://i.imgur.com/bKmWKrZ.jpg',
-'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
+        model = new BookModel(
+        'https://i.imgur.com/bKmWKrZ.jpg',
+        'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
 
+  bookid:number;
   ngOnInit() {
-    this.route.params.subscribe(param=>console.log(param.bookid));
+    this.route.params.subscribe(param=>this.bookid = +param.bookid);
   }
 
 }
