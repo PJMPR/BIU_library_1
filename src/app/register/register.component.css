@@ -1,0 +1,21 @@
+.col-md-3 {
+    margin: 0px;
+    margin-top: 100px;
+  }
+  .container {
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 300px;
+}
+.btn-primary{
+    background-color: #2FCC91;
+    border-color: #2FCC91;
+  }
+  .btn-primary:hover{
+    background-color: #fff;
+    border-color: #2FCC91;
+    color: #2FCC91;
+  }
+  .btn-primary:visited,  .btn-primary:active,  .btn-primary:link  {
+    text-decoration: none;
+}
