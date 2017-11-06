@@ -7,9 +7,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { BooklistComponent } from './booklist/booklist.component';
-import { RightMenuComponent } from './right-menu/right-menu.component';
+import { CategoryMenuComponent } from './category-menu/category-menu.component';
 import { HeaderComponent } from './header/header.component';
-import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { SearchComponent } from './search/search.component';
@@ -22,15 +22,16 @@ import { TabsComponent } from './tabs/tabs.component';
 import { DescriptionComponent } from './description/description.component';
 import { SimilarBooksComponent } from './similar-books/similar-books.component';
 import { CartComponent } from './cart/cart.component';
+import { InboxComponent } from './inbox/inbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     HeaderComponent,
-    RightMenuComponent,
+    CategoryMenuComponent,
     BooklistComponent,
-    BookPreviewComponent,
+    BookDetailsComponent,
     ContentListComponent,
     PersonalDataComponent,
     SearchComponent,
@@ -41,7 +42,8 @@ import { CartComponent } from './cart/cart.component';
     TabsComponent,
     DescriptionComponent,
     SimilarBooksComponent,
-    CartComponent
+    CartComponent,
+    InboxComponent
   ],
   imports: [
     BrowserModule,
