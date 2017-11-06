@@ -19,6 +19,6 @@
   .btn-primary:visited,  .btn-primary:active,  .btn-primary:link  {
     text-decoration: none;
 }
-input[type=text]:focus, input[type=password]:focus, textarea:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=submit]:focus, textarea:focus {
     border: 1px solid #2FCC91;
   }

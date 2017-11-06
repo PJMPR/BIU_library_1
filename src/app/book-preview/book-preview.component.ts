@@ -11,7 +11,7 @@ export class BookPreviewComponent implements OnInit {
 constructor() { }
 
 model:BookModel = new BookModel(
-'http://ecx.images-amazon.com/images/I/51fNaUnG5QL._SY445_QL70_.jpg',
+'https://i.imgur.com/bKmWKrZ.jpg',
 'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
 
 ngOnInit() {
