@@ -4,11 +4,11 @@ import { ActivatedRoute } from '@angular/router';
 import { BooklistComponent } from '../booklist/booklist.component';
 
 @Component({
-  selector: 'app-book-preview',
-  templateUrl: './book-preview.component.html',
-  styleUrls: ['./book-preview.component.css']
+  selector: 'app-book-details',
+  templateUrl: './book-details.component.html',
+  styleUrls: ['./book-details.component.css']
 })
-export class BookPreviewComponent implements OnInit {
+export class BookDetailsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
