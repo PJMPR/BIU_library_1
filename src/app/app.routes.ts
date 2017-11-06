@@ -16,7 +16,7 @@ import { DescriptionComponent } from './description/description.component';
 
 export var appRoutes: Routes = [
     {
-        path: 'home',
+        path: '',
         component: MainPageComponent,
         children:[
             {
@@ -51,11 +51,6 @@ export var appRoutes: Routes = [
                 component:AddBookComponent
             }
         ]
-    },
-    {
-        path: '',
-        redirectTo:'/home',
-        pathMatch:'full'
     },
     {
         path:'booklist',
