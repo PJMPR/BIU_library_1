@@ -21,6 +21,7 @@ import { appRoutes } from './app.routes';
 import { TabsComponent } from './tabs/tabs.component';
 import { DescriptionComponent } from './description/description.component';
 import { SimilarBooksComponent } from './similar-books/similar-books.component';
+import { InboxComponent } from './inbox/inbox.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SimilarBooksComponent } from './similar-books/similar-books.component';
     AddBookComponent,
     TabsComponent,
     DescriptionComponent,
-    SimilarBooksComponent
+    SimilarBooksComponent,
+    InboxComponent
   ],
   imports: [
     BrowserModule,
