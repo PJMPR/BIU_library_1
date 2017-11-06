@@ -21,8 +21,9 @@ bookId:number;
 
   ngOnInit() {
     this.route.params.subscribe(
-      param=>{console.log(param.bookid);
-      x => this.bookId = x.bookid;
+      param=>{
+        console.log(param.bookid);
+         this.bookId = param.bookid;
       })
   }
 
