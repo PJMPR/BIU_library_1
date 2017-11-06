@@ -6,11 +6,30 @@
 		<div class="col-md-2 col-sm-2">
           <div id="public-image-menu-m">
             <ul class="public-image-tag-m">
-                <li class="public-image-category-a selected" *ngFor="let item of model.listOfCategories">{{item.name}}                     
+                <!--<li class="public-image-category-a selected" *ngFor="let item of model.listOfCategories">{{item.name}}-->
+                <li class="public-image-category-a selected">Książki                  
                       <ul>
-                        <li class="public-image-tag-a" *ngFor="let item2 of item.subCategories"><a routerLink="/home/books"> {{item2}} </a></li>
+                        <!--<li class="public-image-tag-a" *ngFor="let item of item.subCategories"><a routerLink="/home/books"> {{item}} </a></li>-->
+                        <li class="public-image-tag-a"><a routerLink="/home/books"> Wszystkie </a></li>
+                        <li class="public-image-tag-a"><a routerLink="/home/books"> Akcja </a></li>
+                        <li class="public-image-tag-a"><a routerLink="/home/books"> Dramat </a></li>
                          </ul>
-                </li>            
+                </li>
+                <li class="public-image-category-a selected">Wyszukiwarka                  
+                    <ul>
+                      <!--<li class="public-image-tag-a" *ngFor="let item of item.subCategories"><a routerLink="/home/books"> {{item}} </a></li>-->
+                      <li class="public-image-tag-a"><a routerLink="/advancedsearch"> Wyszukiwarka zaawansowana </a></li>
+                       </ul>
+              </li> 
+              <li class="public-image-category-a selected">Panel użytkownika                  
+                  <ul>
+                    <!--<li class="public-image-tag-a" *ngFor="let item of item.subCategories"><a routerLink="/home/books"> {{item}} </a></li>-->
+                    <li class="public-image-tag-a"><a routerLink="/book/add"> Dodaj książkę </a></li>
+                    <li class="public-image-tag-a"><a routerLink="/login"> Zaloguj </a></li>
+                    <li class="public-image-tag-a"><a routerLink="/#"> Koszyk </a></li>
+                    <li class="public-image-tag-a"><a routerLink="/#"> Poczta </a></li>
+                     </ul>
+            </li>             
 
             </ul>
           </div>

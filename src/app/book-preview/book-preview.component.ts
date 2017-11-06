@@ -8,13 +8,13 @@ import { BookModel } from '../booklist/bookModel'
 })
 export class BookPreviewComponent implements OnInit {
 
-  constructor() { }
+constructor() { }
 
-  model:BookModel = new BookModel(
-    'http://ecx.images-amazon.com/images/I/51fNaUnG5QL._SY445_QL70_.jpg',
-    'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
+model:BookModel = new BookModel(
+'http://ecx.images-amazon.com/images/I/51fNaUnG5QL._SY445_QL70_.jpg',
+'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
 
-  ngOnInit() {
-  }
+ngOnInit() {
+}
 
 }
