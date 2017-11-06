@@ -180,11 +180,12 @@ nav.navbar-findcond {
       border-color: #2FCC91;
       background: #2FCC91;
       color: white;
+      margin-top: 0px !important;
   }
   
   .btn-advSearch:hover{
       background: white;
-      border-color: #2FCC91;
+      border-color: white;
       color: #2FCC91;
   }
   
@@ -198,8 +199,8 @@ nav.navbar-findcond {
       width: 300px;
       background: rgb(180, 61, 61);
       border-radius: 1px;
-      margin: 0px 0;
-      box-shadow: 0 0 5px 0 #2FCC91;
+      margin-left: 0px !important;
+      box-shadow: 0 0 2px 0 #ccc;
   }
   
   input[type=text], textarea {
@@ -207,7 +208,15 @@ nav.navbar-findcond {
     }
      
     input[type=text]:focus, textarea:focus {
-      box-shadow: 0 0 5px#2FCC91;
       border: 1px solid #2FCC91;
     }
-  
+  .btn-primary {
+    margin-top: 6px;
+  }
+  .btn-primary:focus {
+    background: red;
+  }
+  .form-control {
+    box-shadow: 0 0 2px 0 #ccc;
+    border-color: white;
+  }

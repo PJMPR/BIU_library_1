@@ -46,7 +46,17 @@ export var appRoutes: Routes = [
     },
     {
         path:'header',
-        component: HeaderComponent
+        component: HeaderComponent,
+        children:[
+            {
+                path:'',
+                component:BooklistComponent
+            },
+            {
+                path:'add',
+                component:AddBookComponent
+            }
+        ]
     },
     {
         path:'rightmenu',
@@ -70,7 +80,20 @@ export var appRoutes: Routes = [
     },
     {
         path: 'book',
-        component: BookPreviewComponent
+        children:[
+            {
+                path:'0',
+                component:BookPreviewComponent
+            },
+            {
+                path:'1',
+                component:BookPreviewComponent
+            },
+            {
+                path:'2',
+                component:BookPreviewComponent
+            }
+        ]
     },
     {
         path: 'book/list',

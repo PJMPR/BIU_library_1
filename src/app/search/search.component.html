@@ -1,10 +1,26 @@
-<app-header></app-header>
+<div class="container-fluid">
+    <div class="row">
+        <app-header>></app-header>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+  
+            <right-menu></right-menu>
+        </div>
+    </div>
+    <div class="row">
+          <div class="col-md-10">
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+  </div>
+  
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
-        <img class="search-img" src="assets/img/search.png" />
-    </div>
       <div class="col-md-10">
+
+              <img class="search-img" src="assets/img/search.png" />
+
           <form>
               <legend>Szukaj po: </legend>
               <div class="form-check">
@@ -104,6 +120,7 @@
                       Option three is disabled
                     </label>
                   </div>-->
+                  <button type="submit" class="btn btn-primary">Niuchaj</button>
                 </fieldset>
               <!--<div class="form-check">
                 <label class="form-check-label">
@@ -111,7 +128,6 @@
                   Dostępne
                 </label>
               </div>-->
-              <button type="submit" class="btn btn-primary">Niuchaj</button>
         
             </form>
       </div>
