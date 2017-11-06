@@ -42,7 +42,17 @@ export var appRoutes: Routes = [
     },
     {
         path:'header',
-        component: HeaderComponent
+        component: HeaderComponent,
+        children:[
+            {
+                path:'',
+                component:BooklistComponent
+            },
+            {
+                path:'add',
+                component:AddBookComponent
+            }
+        ]
     },
     {
         path:'rightmenu',

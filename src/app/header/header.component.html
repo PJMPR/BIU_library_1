@@ -43,9 +43,6 @@
               </li>
             </ul>
           </li>
-        <li>
-        <a routerLink="/login" class="btn btn-success" routerLinkActive="active"> Login</a>
-        </li>
         </ul>
         <div class="input-group-btn navbar">
           <div class="btn-group" role="group">
@@ -76,7 +73,7 @@
                     <label for="contain">Tagi</label>
                     <input class="form-control" type="text" placeholder="#Witam #Smoki" />
                   </div>
-                  <button type="submit" class="btn btn-primary btn-advSearch">
+                  <button routerLink="/booklist" routerLinkActive="active" type="submit" class="btn btn-primary btn-advSearch">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                   </button>
                 </form>
@@ -94,6 +91,7 @@
             </div>
             <a class="navbar-brand" routerLink="/advancedsearch" routerLinkActive="active">Advanced Search</a>
             <a class="navbar-brand" routerLink="/book/add" routerLinkActive="active">Add Book</a>
+            <a class="navbar-brand" routerLink="/login" routerLinkActive="active">Login</a>
           </div>
         </div>
       </div>

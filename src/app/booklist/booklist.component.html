@@ -1,6 +1,22 @@
+<div class="container-fluid">
+		<div class="row">
+				<app-header></app-header>
+		</div>
+		<div class="row">
+				<div class="col-md-3">
+						<right-menu></right-menu>
+				</div>
+		</div>
+		<div class="row">
+					<div class="col-md-10">
+							<router-outlet></router-outlet>
+					</div>
+			</div>
+	</div>
+
 <div class="container_fluid">
 	<div class="row">
-	  <div class="col-md-10">
+	  <div class="col-md-8">
 		<div class="col-sm-3 col-md-3 col-lg-3" *ngFor="let book of booklist1">
 		  <div class="polaroid">
 			<img src="{{book.image}}" class="img-responsive" style="width:100%">
@@ -9,7 +25,7 @@
 				<h5><label class="pad">{{book.title}}</label></h5>
 			  </div>
 			  <div class="row">
-				<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a>
+				<a class="btn btn-primary btn-product" routerLink="/book" routerLinkActive="active"><span class="glyphicon glyphicon-info-sign"></span>Szczegóły</a>
 			  </div>
 			  <div class="row">
 				<a class="btn btn-primary_cart btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Dodaj do koszyka</a>
@@ -25,7 +41,7 @@
 	</div>
   
 	<div class="row">
-	  <div class="col-md-10">
+	  <div class="col-md-8">
 		<div class="col-sm-3 col-md-3 col-lg-3" *ngFor="let book of booklist2">
 		  <div class="polaroid">
 			<img src="{{book.image}}" class="img-responsive" style="width:100%">
@@ -33,10 +49,10 @@
 			  <div class="row">
 				<h5><label class="pad">{{book.title}}</label></h5>
 			  </div>
-			  <div class="row" style="padding-left: 18px; padding-right:18px;">
+			  <div class="row">
 				<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</a>
 			  </div>
-			  <div class="row" style="padding: 3px;">
+			  <div class="row">
 				<a class="btn btn-primary_cart btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Dodaj do koszyka</a>
 			  </div>
   
