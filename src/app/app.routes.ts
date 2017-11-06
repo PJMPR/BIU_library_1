@@ -16,7 +16,7 @@ import { DescriptionComponent } from './description/description.component';
 
 export var appRoutes: Routes = [
     {
-        path: 'home',
+        path: '',
         component: MainPageComponent,
         children:[
             {
@@ -26,6 +26,43 @@ export var appRoutes: Routes = [
             {
                 path:'books',
                 component:BooklistComponent
+            },
+            {
+                path:'advancedsearch',
+                component: SearchComponent
+            },
+            {
+                path:'booklist',
+                component: BooklistComponent
+            },
+            {
+                path: 'login',
+                component: LoginComponent
+            },
+            {
+                path: 'register',
+                component: RegisterComponent
+            },
+            {
+                path: 'book/add',
+                component: AddBookComponent
+            },
+            {
+                path: 'book/list',
+                component: BooklistComponent
+            },
+            {
+                path: 'login/changepassword',
+                component: ChangePasswordComponent
+            },
+            {
+                path: 'personaldata',
+                component: PersonalDataComponent
+            },
+            {
+                path: 'book/content',
+                component: ContentListComponent
+        
             },
             {
                 path:'books/:bookid',
@@ -58,10 +95,6 @@ export var appRoutes: Routes = [
         pathMatch:'full'
     },
     {
-        path:'booklist',
-        component: BooklistComponent
-    },
-    {
         path:'header',
         component: HeaderComponent,
         children:[
@@ -80,42 +113,9 @@ export var appRoutes: Routes = [
         component: RightMenuComponent
     },
     {
-        path:'advancedsearch',
-        component: SearchComponent
-    },
-    {
-        path: 'login',
-        component: LoginComponent
-    },
-    {
         path: 'header',
         component: HeaderComponent
     },
-    {
-        path: 'register',
-        component: RegisterComponent
-    },
-    {
-        path: 'book/list',
-        component: BooklistComponent
-    },
-    {
-        path: 'login/changepassword',
-        component: ChangePasswordComponent
-    },
-    {
-        path: 'book/add',
-        component: AddBookComponent
-    },
-    {
-        path: 'personaldata',
-        component: PersonalDataComponent
-    },
-    {
-        path: 'book/content',
-        component: ContentListComponent
-
-    }
 
 
 ]
