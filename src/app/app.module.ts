@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { BooklistComponent } from './booklist/booklist.component';
-import { RightMenuComponent } from './right-menu/right-menu.component';
+import { CategoryMenuComponent } from './category-menu/category-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
 import { ContentListComponent } from './content-list/content-list.component';
@@ -27,7 +27,7 @@ import { SimilarBooksComponent } from './similar-books/similar-books.component';
     AppComponent,
     MainPageComponent,
     HeaderComponent,
-    RightMenuComponent,
+    CategoryMenuComponent,
     BooklistComponent,
     BookPreviewComponent,
     ContentListComponent,

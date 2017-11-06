@@ -8,4 +8,7 @@ export class BookModel {
         public quantity:number
     ) { }
 
+
+   
+
 }
