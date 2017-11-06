@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BookModel } from '../booklist/bookModel'
 import { ActivatedRoute } from '@angular/router';
+import { BooklistComponent } from '../booklist/booklist.component';
 
 @Component({
   selector: 'app-book-preview',
@@ -10,12 +11,13 @@ import { ActivatedRoute } from '@angular/router';
 export class BookPreviewComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
-model:BookModel = new BookModel(
-'https://i.imgur.com/bKmWKrZ.jpg',
-'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
+
+model2:BooklistComponent = new BooklistComponent();
+bookId:number;
 
   ngOnInit() {
     this.route.params.subscribe(param=>console.log(param.bookid));
+    this.route.params.subscribe(x => this.bookId = x.bookid);
   }
 
 }
