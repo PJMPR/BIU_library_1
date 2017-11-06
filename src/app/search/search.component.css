@@ -27,8 +27,12 @@
     padding-top: 5px;
   }
   .col-md-10 {
-    margin-left: 45%;
-    margin-top: -500px;
+    margin-left: 0%;
+    margin-top: 0px;
+  }
+  .col-md-3 {
+    margin: 0px;
+    margin-top: 200px;
   }
 
   .col-md-8 {
@@ -43,4 +47,16 @@
     background-color: #fff;
     border-color: #2FCC91;
     color: #2FCC91;
+  }
+  .search-img {
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  .container-fluid {
+    margin-top: -100px;
+  }
+  form {
+    margin-left: 80%;
+    margin-top: -50%;
+    width: 600px;
   }
