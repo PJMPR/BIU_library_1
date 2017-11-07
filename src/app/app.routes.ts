@@ -13,6 +13,7 @@ import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { SimilarBooksComponent } from './similar-books/similar-books.component';
 import { DescriptionComponent } from './description/description.component';
+import { CartComponent } from './cart/cart.component';
 
 export var appRoutes: Routes = [
     {

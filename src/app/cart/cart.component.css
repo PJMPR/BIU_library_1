@@ -1,0 +1,32 @@
+
+.cartBox {
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 300px;
+}
+.btn-outline-danger {
+    margin-left: 50px;
+    color: red;
+    background-image: none;
+    background-color: transparent;
+    border-color: red;
+}
+
+.btn-outline-danger:hover {
+    color: white;
+    background-image: none;
+    background-color: red;
+    border-color: red;
+}
+
+.btn-primary{
+    background-color: #2FCC91;
+    border-color: #2FCC91;
+  }
+  .btn-primary:hover{
+    background-color: rgb(41, 192, 132);
+    border-color: #2FCC91;
+  }
+
+
+  
