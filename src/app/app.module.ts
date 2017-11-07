@@ -21,6 +21,7 @@ import { appRoutes } from './app.routes';
 import { TabsComponent } from './tabs/tabs.component';
 import { DescriptionComponent } from './description/description.component';
 import { SimilarBooksComponent } from './similar-books/similar-books.component';
+import { CartComponent } from './cart/cart.component';
 import { InboxComponent } from './inbox/inbox.component';
 
 @NgModule({
@@ -41,6 +42,7 @@ import { InboxComponent } from './inbox/inbox.component';
     TabsComponent,
     DescriptionComponent,
     SimilarBooksComponent,
+    CartComponent,
     InboxComponent
   ],
   imports: [

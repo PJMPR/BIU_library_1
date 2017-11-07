@@ -1,9 +1,9 @@
 <div class="container">
-  <div class="row" *ngFor="let model of model2.booklist1; let i = index">
-    <div class="col-md-4" *ngIf="i == bookId">
-      <div class="picture"><img src="{{model.image}}" alt="{{model.title}}"></div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="picture"><img src="{{model.imgURL}}" alt="{{model.title}}"></div>
     </div>
-    <div class="col-md-10" *ngIf="i == bookId">
+    <div class="col-md-10">
       <div class="content">
         <button>
             <span>

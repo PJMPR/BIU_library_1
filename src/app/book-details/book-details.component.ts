@@ -11,13 +11,20 @@ import { BooklistComponent } from '../booklist/booklist.component';
 export class BookDetailsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
+  
+  model = new BookModel(
+  'https://i.imgur.com/bKmWKrZ.jpg',
+  'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
 
-model2:BooklistComponent = new BooklistComponent();
+ // model2 = new BookService();
 bookId:number;
 
   ngOnInit() {
-    this.route.params.subscribe(param=>console.log(param.bookid));
-    this.route.params.subscribe(x => this.bookId = x.bookid);
+    this.route.params.subscribe(
+      param=>{
+        console.log(param.bookid);
+         this.bookId = param.bookid;
+      })
   }
 
 }
