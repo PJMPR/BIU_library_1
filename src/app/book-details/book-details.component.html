@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-10">
       <div class="content">
-        <button>
+        <button class="btn btn-primary">
             <span>
               <ng-container *ngIf="model.quantity > 0; then thenTemplate; else elseTemplate"></ng-container>
               <ng-template #thenTemplate>

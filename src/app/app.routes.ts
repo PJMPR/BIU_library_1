@@ -117,6 +117,9 @@ export var appRoutes: Routes = [
         path: 'header',
         component: HeaderComponent
     },
-
+    {
+        path: 'cart',
+        component: CartComponent
+    },
 
 ]

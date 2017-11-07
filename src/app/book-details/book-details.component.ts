@@ -17,6 +17,7 @@ export class BookDetailsComponent implements OnInit {
   'Ruiny Gorlanu','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
 
  // model2 = new BookService();
+ 
 bookId:number;
 
   ngOnInit() {
