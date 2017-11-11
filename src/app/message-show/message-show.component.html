@@ -1,0 +1,24 @@
+<p>
+  <div class="container" *ngFor="let email of emailList">
+    <div class="modal-header">
+
+        <h3>Temat: {{email.subject}}</h3>
+    </div>
+    <div class="modal-body">
+        <strong>Do:</strong> {{email.sender}} <br />
+        <strong>Od:</strong> {{email.receiver}} <br />
+        <strong>Data:</strong> {{email.date}} <br />
+        <br />
+        <strong></strong> <br /><br/>
+        <p>
+
+          {{email.content}}
+
+        </p>
+
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:history.back()" class="btn btn-primary">&larr;</a>
+        <a routerLink="/inbox/message-show/message-answer" class="btn btn-primary">Answer</a>
+    </div>
+</div>
