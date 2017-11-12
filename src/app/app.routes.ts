@@ -14,6 +14,7 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { SimilarBooksComponent } from './similar-books/similar-books.component';
 import { DescriptionComponent } from './description/description.component';
 import { CartComponent } from './cart/cart.component';
+import { InboxComponent } from './inbox/inbox.component';
 
 export var appRoutes: Routes = [
     {
@@ -39,6 +40,14 @@ export var appRoutes: Routes = [
             {
                 path: 'login',
                 component: LoginComponent
+            },
+            {
+                path: 'inbox',
+                component: InboxComponent
+            },
+            {
+                path: 'cart',
+                component: CartComponent
             },
             {
                 path: 'register',
@@ -116,10 +125,6 @@ export var appRoutes: Routes = [
     {
         path: 'header',
         component: HeaderComponent
-    },
-    {
-        path: 'cart',
-        component: CartComponent
     },
 
 ]

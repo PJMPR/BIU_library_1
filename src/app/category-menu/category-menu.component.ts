@@ -15,7 +15,7 @@ export class CategoryMenuComponent implements OnInit {
     listOfCategories: [
       new Category("Książki", ["Wszystkie","Akcja","Dramat"]),
       new Category("Wyszukiwarka", ["Zaawansowane wyszukiwanie"]),
-      new Category("Panel użytkownika", ["Dodaj książkę", "Zaloguj", "Koszyk", "Poczta"])
+      new Category("Panel użytkownika", ["Dodaj książkę", "Zaloguj", "Koszyk", "Poczta", "Dane personalne"])
     ]
   };
 
