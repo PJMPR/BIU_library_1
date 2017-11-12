@@ -23,6 +23,7 @@ import { DescriptionComponent } from './description/description.component';
 import { SimilarBooksComponent } from './similar-books/similar-books.component';
 import { CartComponent } from './cart/cart.component';
 import { InboxComponent } from './inbox/inbox.component';
+import { BookService } from './services/book-service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { InboxComponent } from './inbox/inbox.component';
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [BookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
