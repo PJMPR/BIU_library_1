@@ -49,6 +49,7 @@ import { InboxComponent } from './inbox/inbox.component';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
