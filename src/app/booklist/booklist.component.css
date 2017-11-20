@@ -51,3 +51,6 @@ div.polaroid {
 		margin-left: 25%;
 		margin-top: -5%;
 	}
+	.container_fluid {
+		margin-top: 0px;
+	}

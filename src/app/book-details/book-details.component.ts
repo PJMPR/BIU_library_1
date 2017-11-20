@@ -17,7 +17,6 @@ export class BookDetailsComponent implements OnInit {
   bookList = new BookService().model;
   model: BookModel;
   bookId:number;
-
   ngOnInit() {
     this.route.params.subscribe(
       param=>{

@@ -13,8 +13,15 @@ h3 {
     font-weight: bold;
     line-height: 50%;
 }
+h5 {
+    line-height: 100%;
+}
 .picture{
     float:right;
+    border: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: white;
 }
 .col-md-3 {
     margin: 0px;
@@ -26,11 +33,14 @@ h3 {
     margin-top: 5%;
 }
 .col-md-4 {
-    margin-left: -50px;
+    margin-left: -400px;
     margin-top: 40px;
-
+    width: 400px;
+    height: 600px;
 }
 .btn-primary{
+    margin-left: 120px;
+    margin-top: 20px;
     background-color: #2FCC91;
     border-color: #2FCC91;
   }

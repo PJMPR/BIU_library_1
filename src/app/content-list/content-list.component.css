@@ -2,9 +2,19 @@ ol {
     counter-reset: item
     }
     li {
-    display: block
+    display: block;
+    line-height: 200%;
+    font-weight: bold;
     }
     li:before {
     content: counters(item, ".")" ";
     counter-increment: item
     }
+.sectionPage {
+    width: 600px;
+    height: 400px;
+}
+.contentList {
+    width: 100%;
+    height: 100%;
+}

@@ -14,6 +14,7 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { SimilarBooksComponent } from './similar-books/similar-books.component';
 import { DescriptionComponent } from './description/description.component';
 import { CartComponent } from './cart/cart.component';
+import { InboxComponent } from './inbox/inbox.component';
 
 export var appRoutes: Routes = [
     {
@@ -27,6 +28,51 @@ export var appRoutes: Routes = [
             {
                 path:'books',
                 component:BooklistComponent
+            },
+            {
+                path:'advancedsearch',
+                component: SearchComponent
+            },
+            {
+                path:'booklist',
+                component: BooklistComponent
+            },
+            {
+                path: 'login',
+                component: LoginComponent
+            },
+            {
+                path: 'inbox',
+                component: InboxComponent
+            },
+            {
+                path: 'cart',
+                component: CartComponent
+            },
+            {
+                path: 'register',
+                component: RegisterComponent
+            },
+            {
+                path: 'book/add',
+                component: AddBookComponent
+            },
+            {
+                path: 'book/list',
+                component: BooklistComponent
+            },
+            {
+                path: 'login/changepassword',
+                component: ChangePasswordComponent
+            },
+            {
+                path: 'personaldata',
+                component: PersonalDataComponent
+            },
+            {
+                path: 'book/content',
+                component: ContentListComponent
+        
             },
             {
                 path:'books/:bookid',
@@ -54,8 +100,9 @@ export var appRoutes: Routes = [
         ]
     },
     {
-        path:'booklist',
-        component: BooklistComponent
+        path: '',
+        redirectTo:'/home',
+        pathMatch:'full'
     },
     {
         path:'header',
@@ -76,46 +123,8 @@ export var appRoutes: Routes = [
         component: CategoryMenuComponent
     },
     {
-        path:'advancedsearch',
-        component: SearchComponent
-    },
-    {
-        path: 'login',
-        component: LoginComponent
-    },
-    {
         path: 'header',
         component: HeaderComponent
     },
-    {
-        path: 'register',
-        component: RegisterComponent
-    },
-    {
-        path:'cart',
-        component: CartComponent
-    },
-    {
-        path: 'book/list',
-        component: BooklistComponent
-    },
-    {
-        path: 'login/changepassword',
-        component: ChangePasswordComponent
-    },
-    {
-        path: 'book/add',
-        component: AddBookComponent
-    },
-    {
-        path: 'personaldata',
-        component: PersonalDataComponent
-    },
-    {
-        path: 'book/content',
-        component: ContentListComponent
-
-    }
-
 
 ]
