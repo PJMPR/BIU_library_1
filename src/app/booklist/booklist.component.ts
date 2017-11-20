@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookModel } from './bookModel';
+import { BookService } from '../services/book-service';
 
 @Component({
   selector: 'booklist',
@@ -8,9 +9,11 @@ import { BookModel } from './bookModel';
 })
 export class BooklistComponent implements OnInit {
 
+  booklist1 = new BookService().model;
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
