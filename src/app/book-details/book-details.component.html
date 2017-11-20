@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-4">
       <div class="picture"><img src="{{model.imgURL}}" alt="{{model.title}}"></div>
-      <button class="btn btn-primary">
+      <button class="btn btn-primary" (click)="addToCart()">
           <span>
             <ng-container *ngIf="model.quantity > 0; then thenTemplate; else elseTemplate"></ng-container>
             <ng-template #thenTemplate>

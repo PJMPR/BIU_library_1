@@ -10,10 +10,15 @@ export class HeaderComponent implements OnInit {
 
 public model = new HeaderModel("s13900", 5, 0);
 
+numberOfItemsInCart = JSON.parse(localStorage.getItem('inCart'));
 
-  constructor() { }
+
+
+  constructor() {
+   }
 
   ngOnInit() {
+    
   }
 
 }

@@ -10,13 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CartComponent implements OnInit {
 
 
-  booklist1=[
-    {title:"Ruiny Gorlanu"},
-    {title:"Płonący Most"},
-    {title:"Ziemia Skuta Lodem"},
-    {title:"Bitwa o Skandię"},
-    {title:"Czarnoksiężnik z Północy"}
-  ]
+  booklist1=[]
 
   constructor(private route: ActivatedRoute) { }
   model:BookModel = new BookModel(1,
@@ -26,11 +20,14 @@ export class CartComponent implements OnInit {
     ngOnInit() {
       console.log("dzialaxxx");
       this.route.params.subscribe(param=>console.log(param.bookid));
+      this.booklist1 = JSON.parse(localStorage.getItem('bookList'));
     }
 
 onItemDeleted(index: number){
   console.log("dziala");
   this.booklist1.splice(index, 1);
+  localStorage.setItem('bookList',JSON.stringify(this.booklist1));
+  localStorage.setItem('inCart', JSON.stringify(this.booklist1.length));
 }
 
 }
