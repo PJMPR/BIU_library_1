@@ -19,7 +19,7 @@ export class CartComponent implements OnInit {
   ]
 
   constructor(private route: ActivatedRoute) { }
-  model:BookModel = new BookModel(
+  model:BookModel = new BookModel(1,
   'https://i.imgur.com/bKmWKrZ.jpg',
   'KS tytul','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
   
