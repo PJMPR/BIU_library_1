@@ -12,13 +12,20 @@ export class AddBookComponent implements OnInit {
   public isbn : string;
   public publisher : string;
   public quantity : string;
-  public tableOfContents : string;
+  public tableOfContents : string[] = [];
   public description : string;
   public tags : string;
 
+  counter = [];
+
   constructor() { }
 
+  addChapterFunction() {
+    this.tableOfContents.push('');
+  }
+
   ngOnInit() {
+    this.tableOfContents.push('');    
   }
 
 }
