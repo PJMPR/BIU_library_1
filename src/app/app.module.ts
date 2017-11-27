@@ -5,25 +5,25 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { BooklistComponent } from './booklist/booklist.component';
-import { CategoryMenuComponent } from './category-menu/category-menu.component';
-import { HeaderComponent } from './header/header.component';
-import { BookDetailsComponent } from './book-details/book-details.component';
-import { ContentListComponent } from './content-list/content-list.component';
-import { PersonalDataComponent } from './personal-data/personal-data.component';
-import { SearchComponent } from './search/search.component';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
-import { AddBookComponent } from './add-book/add-book.component';
+import { MainPageComponent } from './common-components/main-page/main-page.component';
+import { BooklistComponent } from './book-components/booklist/booklist.component';
+import { CategoryMenuComponent } from './common-components/category-menu/category-menu.component';
+import { HeaderComponent } from './common-components/header/header.component';
+import { BookDetailsComponent } from './book-components/book-details/book-details.component';
+import { ContentListComponent } from './book-components/content-list/content-list.component';
+import { PersonalDataComponent } from './user-components/personal-data/personal-data.component';
+import { SearchComponent } from './common-components/search/search.component';
+import { RegisterComponent } from './user-components/register/register.component';
+import { LoginComponent } from './user-components/login/login.component';
+import { ChangePasswordComponent } from './user-components/change-password/change-password.component';
+import { AddBookComponent } from './book-components/add-book/add-book.component';
 import { appRoutes } from './app.routes';
-import { TabsComponent } from './tabs/tabs.component';
-import { DescriptionComponent } from './description/description.component';
-import { SimilarBooksComponent } from './similar-books/similar-books.component';
-import { CartComponent } from './cart/cart.component';
-import { InboxComponent } from './inbox/inbox.component';
-import { CategoriesService } from './category-menu/categories.service';
+import { TabsComponent } from './book-components/tabs/tabs.component';
+import { DescriptionComponent } from './book-components/description/description.component';
+import { SimilarBooksComponent } from './book-components/similar-books/similar-books.component';
+import { CartComponent } from './common-components/cart/cart.component';
+import { InboxComponent } from './user-components/inbox/inbox.component';
+import { CategoriesService } from './common-components/category-menu/categories.service';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,5 @@
-import { BookModel } from "../booklist/bookModel";
 import { Injectable } from "@angular/core";
+import { BookModel } from "../../book-components/booklist/bookModel";
 
 
 export class BookService{
