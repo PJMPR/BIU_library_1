@@ -4,7 +4,11 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-2 col-sm-2">
-          <div id="public-image-menu-m">
+
+        <div *ngIf="isBusy">
+          <span>Loading...</span>
+        </div>
+          <div *ngIf="!isBusy" id="public-image-menu-m">
             <ul class="public-image-tag-m">
                 <li class="public-image-category-a selected" *ngFor="let item of model.listOfCategories">{{item.name}}                     
                       <ul *ngFor="let item2 of item.subCategories; let i = index">

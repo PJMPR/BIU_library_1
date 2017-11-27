@@ -3,6 +3,7 @@ import {
   OnInit
 } from '@angular/core';
 import {Category} from './category';
+import { CategoriesService } from './categories.service';
 
 @Component({
   selector: 'category-menu',
@@ -12,13 +13,26 @@ import {Category} from './category';
 export class CategoryMenuComponent implements OnInit {
 
   public model = {
-    listOfCategories: [
-                        new Category("Książki", ["Wszystkie","Fantasy","Przygodowe"])
-                      ]
+    listOfCategories: []
   };
 
-  constructor() {}
+  isBusy=false;
 
-  ngOnInit() {}
+  constructor(private categoryService: CategoriesService) {}
 
+  ngOnInit() {
+
+    this.getCategories();
+  }
+
+
+  private getCategories() {
+    this.isBusy=true;
+    this.categoryService
+      .getAllCategories()
+      .subscribe(categories => {
+        this.model.listOfCategories = categories;
+        this.isBusy = false;
+      });
+  }
 }
