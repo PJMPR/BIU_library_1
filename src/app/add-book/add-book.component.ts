@@ -24,6 +24,12 @@ export class AddBookComponent implements OnInit {
     this.tableOfContents.push('');
   }
 
+  deleteChapterFunction(){
+    if(this.tableOfContents.length > 1){
+      this.tableOfContents.pop();      
+    }
+  }
+
   ngOnInit() {
     this.tableOfContents.push('');    
   }
