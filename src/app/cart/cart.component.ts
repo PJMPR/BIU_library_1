@@ -1,33 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { BookModel } from '../booklist/bookModel';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from './cart.service';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./cart.component.css'],
+  providers: [CartService]
 })
 export class CartComponent implements OnInit {
 
+  booklist1=[];
 
-  booklist1=[]
+  constructor(private route: ActivatedRoute, private cartService:CartService) { }
 
-  constructor(private route: ActivatedRoute) { }
   model:BookModel = new BookModel(1,
   'https://i.imgur.com/bKmWKrZ.jpg',
   'KS tytul','Sowa',['Andrzej Podsiadło','Andrzej Duda'],10);
   
     ngOnInit() {
-      console.log("dzialaxxx");
       this.route.params.subscribe(param=>console.log(param.bookid));
-      this.booklist1 = JSON.parse(localStorage.getItem('bookList'));
+      this.cartService.getItemInCartList().subscribe(next => {
+        this.booklist1 = next;
+      });
     }
 
 onItemDeleted(index: number){
-  console.log("dziala");
-  this.booklist1.splice(index, 1);
-  localStorage.setItem('bookList',JSON.stringify(this.booklist1));
-  localStorage.setItem('inCart', JSON.stringify(this.booklist1.length));
+  this.cartService.removeItemFromCart(index);
 }
 
 }

@@ -1,37 +1,28 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BookModel } from '../booklist/bookModel'
 import { ActivatedRoute } from '@angular/router';
 import { BooklistComponent } from '../booklist/booklist.component';
 import { BookService } from '../services/book-service';
-import { HeaderModel } from '../header/HeaderModel';
+import { CartService } from '../cart/cart.service';
 
 @Component({
   selector: 'app-book-details',
   templateUrl: './book-details.component.html',
-  styleUrls: ['./book-details.component.css']
+  styleUrls: ['./book-details.component.css'],
+  providers: [CartService] 
 })
 export class BookDetailsComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private cartService:CartService) { }
   
 
   bookList = new BookService().model;
   model: BookModel;
   bookId:number;
-  @Output('updateCart') updateCart = new EventEmitter();
 
   addToCart() {
-    var list:BookModel[] = JSON.parse(localStorage.getItem('bookList'))
-    if(list === null)
-      list = [];
-    list.push(this.model);
 
-    localStorage.setItem('inCart', JSON.stringify(list.length));
-    localStorage.setItem('bookList',JSON.stringify(list));
-
-    this.updateCart.emit({
-      value: list.length
-    })
+    this.cartService.addNewItemToCart(this.model);
 
   }
 
